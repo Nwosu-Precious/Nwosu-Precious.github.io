@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nwosu Precious Chinenyenwa | Cosmetic Scientist</title>
+<meta name="description" content="Nwosu Precious Chinenyenwa: chemical engineer and R&D cosmetic chemist formulating science-backed skin and hair care for skin of colour. Seeking a Master’s in Cosmetic Science.">
+<meta property="og:title" content="Nwosu Precious Chinenyenwa | Cosmetic Scientist">
+<meta property="og:description" content="Chemical engineer and R&D cosmetic chemist formulating for melanin-rich skin and textured hair.">
+<meta property="og:image" content="assets/img/headshot.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23A4472F'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%23F6EFE6' font-family='Georgia,serif'>PN</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6EFE6; --surface:#FFFAF4; --ink:#2B1D17; --muted:#6B5A50; --line:#E4D6C6;
+  --clay:#A4472F; --clay-soft:#F1DDD3; --sage:#5F7356; --sage-soft:#E3E9DD; --gold:#B5823A;
+  --shadow:0 18px 40px -24px rgba(60,30,15,.35);
+  --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans:"Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1C1411;--surface:#271C18;--ink:#F3E8DC;--muted:#BCA999;--line:#3D2E27;
+    --clay:#E08B6C;--clay-soft:#3E2620;--sage:#A6B898;--sage-soft:#2C3328;--gold:#D9A85E;
+    --shadow:0 18px 40px -24px rgba(0,0,0,.7);color-scheme:dark}
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:var(--clay);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0}
+h2{font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.01em}
+h3{font-size:1.55rem}
+p{margin:0 0 1em}
+.muted{color:var(--muted)}
+
+/* ===== Shell: sidebar + stage ===== */
+.shell{display:grid;grid-template-columns:290px 1fr;min-height:100vh}
+.side{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:34px 28px;border-right:1px solid var(--line);background:var(--surface)}
+.side .me{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.side .me img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 18%}
+.side .me b{font-family:var(--serif);font-size:1.3rem;line-height:1.1;display:block}
+.side .me small{color:var(--muted);font-size:.8rem}
+.nav{list-style:none;padding:0;margin:40px 0 0;display:flex;flex-direction:column;gap:2px}
+.nav a{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.96rem}
+.nav a:hover{background:var(--clay-soft)}
+.nav a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.nav a span{font-size:.75rem;opacity:.6}
+.side-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:.92rem;text-decoration:none;border:1.5px solid var(--clay);transition:background .2s,color .2s}
+.btn-solid{background:var(--clay);color:#fff}
+.btn-solid:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn-line{color:var(--clay);background:transparent}
+.btn-line:hover{background:var(--clay-soft)}
+.btn svg{width:16px;height:16px}
+.socials{display:flex;gap:14px;font-size:.88rem}
+
+.stage{min-width:0}
+.view{display:none;padding:56px clamp(22px,5vw,72px) 80px;max-width:1180px}
+.view.on{display:block;animation:enter .45s ease}
+@keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.view.on{animation:none}}
+.view-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:38px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.view-head p{max-width:56ch;margin:10px 0 0;color:var(--muted)}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:64px;padding-top:24px;border-top:1px solid var(--line)}
+.pager a{text-decoration:none;font-weight:600;color:var(--ink)}
+.pager a small{display:block;color:var(--muted);font-weight:500;font-size:.78rem}
+.pager a:hover{color:var(--clay)}
+
+/* ===== Home ===== */
+.hero{position:relative;border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1.25fr .9fr;min-height:560px;background:var(--surface);box-shadow:var(--shadow)}
+.hero-copy{position:relative;z-index:1;padding:clamp(28px,5vw,60px);display:flex;flex-direction:column;justify-content:center;background:linear-gradient(115deg,var(--surface) 55%,transparent),url(assets/img/texture.jpg) center/cover}
+.hero h1{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-.02em;font-weight:600}
+.hero h1 small{display:block;font-size:.42em;letter-spacing:0;color:var(--muted);font-weight:500;margin-top:10px}
+.hero .lede{font-size:1.15rem;max-width:44ch;margin:26px 0 30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;background:url(assets/img/texture.jpg) center/cover}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.seeking{margin-top:30px;display:inline-flex;gap:10px;align-items:center;font-size:.9rem;color:var(--sage);font-weight:600}
+.seeking i{width:8px;height:8px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 4px var(--sage-soft)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:34px 0 0;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.facts div{padding:22px 24px;border-left:1px solid var(--line)}
+.facts div:first-child{border-left:0}
+.facts b{font-family:var(--serif);font-size:2.3rem;line-height:1;display:block;color:var(--clay)}
+.facts span{font-size:.87rem;color:var(--muted)}
+.why{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;margin-top:64px;align-items:start}
+.why h2{font-size:clamp(2rem,3.4vw,2.8rem)}
+.why .body p{font-family:var(--serif);font-size:1.32rem;line-height:1.55}
+.why .body p:last-child{color:var(--clay);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px}
+.tile{position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:4/3;text-decoration:none;color:#fff}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tile:hover img{transform:scale(1.04)}
+.tile div{position:absolute;inset:auto 0 0 0;padding:18px 20px;background:linear-gradient(transparent,rgba(30,15,10,.82))}
+.tile b{font-family:var(--serif);font-size:1.45rem;display:block;line-height:1.15}
+.tile small{opacity:.85}
+
+/* ===== Generic blocks ===== */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:4px 11px;border-radius:999px;background:var(--sage-soft);color:var(--sage);margin:0 6px 6px 0}
+.tag.clay{background:var(--clay-soft);color:var(--clay)}
+.meta{font-size:.88rem;color:var(--muted);margin:6px 0 14px}
+
+/* Research */
+.feature{display:grid;grid-template-columns:1fr 1fr;border-radius:26px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.feature-img img{width:100%;height:100%;object-fit:cover;min-height:320px}
+.feature-body{padding:clamp(24px,4vw,44px)}
+.feature-body h3{font-size:clamp(1.6rem,2.6vw,2.15rem)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;color:var(--gold);margin-bottom:14px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.stat-row div{border-top:2px solid var(--clay);padding-top:10px}
+.stat-row b{font-family:var(--serif);font-size:1.9rem;display:block;line-height:1}
+.stat-row span{font-size:.8rem;color:var(--muted)}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;align-items:start}
+figure{margin:0}
+.figs figure{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;cursor:zoom-in}
+.figs figcaption,.gallery figcaption{font-size:.84rem;color:var(--muted);margin-top:10px}
+.figs figcaption{color:#6B5A50}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.kv{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px}
+.kv div b{font-family:var(--serif);font-size:1.6rem;color:var(--clay);display:block;line-height:1}
+.kv div span{font-size:.8rem;color:var(--muted)}
+.articles{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.article{display:block;text-decoration:none;color:var(--ink);transition:border-color .2s}
+.article:hover{border-color:var(--clay)}
+.article h3{margin-bottom:10px}
+.article .go{color:var(--clay);font-weight:600;font-size:.9rem}
+.sub{font-family:var(--serif);font-size:1.9rem;margin:56px 0 4px}
+
+/* Lab */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.project img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.project .in{padding:24px}
+.project h3{font-size:1.4rem;margin-bottom:10px}
+.project p{font-size:.94rem}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.skills h3{font-size:1.25rem;margin-bottom:12px}
+.media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.media{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--line);cursor:pointer;border:0;padding:0}
+.media img{width:100%;height:100%;object-fit:cover}
+.media .play{position:absolute;inset:0;display:grid;place-items:center}
+.media .play i{width:54px;height:54px;border-radius:50%;background:rgba(255,250,244,.92);display:grid;place-items:center}
+.media .play i::after{content:"";border-left:15px solid var(--clay);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.media span{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;font-size:.8rem;color:#fff;background:linear-gradient(transparent,rgba(30,15,10,.8));text-align:left}
+
+/* Experience timeline */
+.tl{position:relative;margin-left:8px}
+.tl::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--line)}
+.role{position:relative;display:grid;grid-template-columns:1fr 260px;gap:32px;padding:0 0 46px 34px}
+.role::before{content:"";position:absolute;left:-6px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--clay)}
+.role.past::before{border-color:var(--muted)}
+.role h3{font-size:1.5rem}
+.role .org{font-weight:600;margin-top:4px}
+.role .org a{color:inherit}
+.role ul{margin:12px 0 0;padding-left:18px}
+.role li{margin-bottom:6px}
+.role .pic{border-radius:18px;overflow:hidden;align-self:start;cursor:zoom-in;border:0;padding:0;background:none}
+.role .pic img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.edu{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.edu .crest{width:76px;height:76px;border-radius:50%;background:var(--sage-soft);color:var(--sage);display:grid;place-items:center;font-family:var(--serif);font-size:1.5rem;font-weight:700}
+
+/* Events */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:inherit;font-size:.88rem;font-weight:600;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.event{display:grid;grid-template-columns:330px 1fr;gap:36px;padding:34px 0;border-top:1px solid var(--line)}
+.filters + .event{border-top:0;padding-top:0}
+.event .when{font-size:.88rem;color:var(--muted);margin-top:6px}
+.event .role-tag{margin-top:14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.gallery button{border:0;padding:0;background:none;cursor:zoom-in;text-align:left}
+.gallery img{border-radius:16px;height:250px;object-fit:cover;width:100%}
+.gallery .wide{grid-column:span 2}
+.event.noimg .gallery{display:block}
+.note{font-size:.9rem;color:var(--muted);font-style:italic}
+
+/* Leadership */
+.lead-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.lead .meta{margin-bottom:10px}
+.lead ul{margin:0;padding-left:18px;font-size:.95rem}
+.lead.with-img{display:grid;grid-template-columns:150px 1fr;gap:22px;grid-column:span 2}
+.lead.with-img button{border:0;padding:0;background:none;cursor:zoom-in}
+.lead.with-img img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
+
+/* Credentials */
+.honour{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.honour .card:first-child{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.honour .card:first-child .meta{color:var(--bg);opacity:.75}
+.honour h3{font-size:1.5rem}
+.certs{list-style:none;padding:0;margin:20px 0 0;border:1px solid var(--line);border-radius:20px;background:var(--surface);overflow:hidden}
+.certs li{display:grid;grid-template-columns:1fr 200px 100px;gap:16px;align-items:center;padding:16px 24px;border-top:1px solid var(--line)}
+.certs li:first-child{border-top:0}
+.certs a{color:var(--ink);font-weight:600;text-decoration:none}
+.certs a:hover{color:var(--clay)}
+.certs a::after{content:" ↗";color:var(--clay);font-size:.85em}
+.certs .by{color:var(--muted);font-size:.9rem}
+.certs .dt{color:var(--muted);font-size:.85rem;text-align:right}
+.aff{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.aff div b{display:block;font-family:var(--serif);font-size:1.25rem;line-height:1.2}
+.aff div span{font-size:.82rem;color:var(--muted)}
+.langs{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.lang b{font-family:var(--serif);font-size:1.3rem}
+.bar{height:6px;width:160px;background:var(--line);border-radius:4px;margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--sage)}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.contact .big{background:var(--clay);color:#fff;border:0;padding:clamp(28px,5vw,52px);border-radius:26px}
+.contact .big h2{color:#fff}
+.contact .big a{color:#fff}
+.contact .big p{opacity:.92;font-size:1.08rem;max-width:42ch}
+.contact .big .btn{background:#fff;color:var(--clay);border-color:#fff;margin-top:12px}
+.contact ul{list-style:none;padding:0;margin:0}
+.contact li{padding:14px 0;border-top:1px solid var(--line)}
+.contact li:first-child{border-top:0}
+.contact li small{display:block;color:var(--muted);font-size:.8rem}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,10,7,.92);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb-inner{max-width:min(1100px,94vw);max-height:88vh;display:flex;flex-direction:column;align-items:center}
+.lb img,.lb video{max-height:80vh;width:auto;border-radius:12px;background:#fff}
+.lb p{color:#F3E8DC;margin:14px 0 0;font-size:.92rem;text-align:center}
+.lb-close{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:18px;width:46px;height:46px;border-radius:50%;border:0;background:#F3E8DC;color:#2B1D17;font-size:1.5rem;cursor:pointer}
+
+/* Mobile top bar */
+.topbar{display:none}
+@media (max-width:980px){
+  .shell{grid-template-columns:1fr}
+  .side{display:none}
+  .topbar{display:block;position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);margin-top:calc(-1 * env(safe-area-inset-top,0px))}
+  .topbar .row{display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
+  .topbar .me{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:var(--serif);font-weight:600;font-size:1.15rem}
+  .topbar .me img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 18%}
+  .topbar .btn{padding:8px 14px;font-size:.82rem}
+  .topnav{display:flex;gap:6px;overflow-x:auto;padding:0 18px 12px;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav a{flex:none;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:.85rem;font-weight:600}
+  .topnav a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .view{padding-top:34px}
+  .hero{grid-template-columns:1fr}
+  .hero-photo{order:-1;height:420px}
+  .hero-photo img{object-position:50% 6%}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts div:nth-child(3){border-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .why,.feature,.figs,.two,.articles,.event,.contact,.honour{grid-template-columns:1fr}
+  .tiles,.projects,.skills{grid-template-columns:1fr 1fr}
+  .media-grid{grid-template-columns:repeat(3,1fr)}
+  .role{grid-template-columns:1fr}
+  .role .pic{max-width:300px}
+  .aff{grid-template-columns:1fr 1fr}
+  .certs li{grid-template-columns:1fr auto}
+  .certs .by{grid-column:1;grid-row:2;margin-top:-10px}
+  .certs .dt{grid-row:1/3;grid-column:2}
+}
+@media (max-width:620px){
+  .tiles,.projects,.skills,.lead-grid{grid-template-columns:1fr}
+  .lead.with-img{grid-column:auto;grid-template-columns:110px 1fr}
+  .media-grid{grid-template-columns:1fr 1fr}
+  .stat-row{grid-template-columns:1fr 1fr}
+  .gallery .wide{grid-column:auto}
+  .hero-photo{height:380px}
+  .gallery img{height:220px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Mobile top bar ===== -->
+<header class="topbar">
+  <div class="row">
+    <a class="me" href="#home"><img src="assets/img/headshot.jpg" alt="">Precious Nwosu</a>
+    <a class="btn btn-solid" href="assets/docs/Nwosu_Precious_CV.pdf" download>Download CV</a>
+  </div>
+  <nav class="topnav" aria-label="Sections" data-nav></nav>
+</header>
+
+<div class="shell">
+  <!-- ===== Desktop sidebar ===== -->
+  <aside class="side">
+    <a class="me" href="#home">
+      <img src="assets/img/headshot.jpg" alt="Portrait of Nwosu Precious Chinenyenwa">
+      <span><b>Nwosu Precious Chinenyenwa</b><small>Cosmetic scientist, chemical engineer</small></span>
+    </a>
+    <ul class="nav" data-nav></ul>
+    <div class="side-foot">
+      <a class="btn btn-solid" href="assets/docs/Nwosu_Precious_CV.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>Download CV</a>
+      <a class="btn btn-line" href="mailto:nwosuprcs@gmail.com">Email me</a>
+      <div class="socials"><a href="https://www.linkedin.com/in/nwosu-prcs" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Nwosu-Precious" target="_blank" rel="noopener">GitHub</a></div>
+    </div>
+  </aside>
+
+  <main class="stage">
+
+    <!-- ================= HOME ================= -->
+    <section class="view" id="home" data-title="Overview">
+      <div class="hero">
+        <div class="hero-copy">
+          <h1>Nwosu Precious Chinenyenwa<small>Chemical engineer formulating science-backed skin and hair care for skin of colour</small></h1>
+          <p class="lede">Junior R&amp;D Cosmetic Chemist at Afri Botanica, Lagos. BEng Chemical Engineering, FUTO. Lead author of a scoping review on post-inflammatory hyperpigmentation in Fitzpatrick IV–VI skin.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#research">See my research</a>
+            <a class="btn btn-line" href="assets/docs/Nwosu_Precious_CV.pdf" download>Download CV</a>
+          </div>
+          <span class="seeking"><i></i>Seeking a funded Master’s in Cosmetic Science or Formulation Science</span>
+        </div>
+        <div class="hero-photo"><img src="assets/img/headshot.jpg" alt="Portrait of Nwosu Precious Chinenyenwa"></div>
+      </div>
+
+      <div class="facts">
+        <div><b>50+</b><span>lab trial batches across skin, hair, lip and fragrance</span></div>
+        <div><b>74</b><span>studies mapped in her PIH scoping review</span></div>
+        <div><b>4</b><span>cosmetic and manufacturing companies worked with</span></div>
+        <div><b>14</b><span>certifications in cosmetic science, GMP and regulation</span></div>
+      </div>
+
+      <div class="why">
+        <h2>Why a Master’s, and why now</h2>
+        <div class="body">
+          <p>I came to cosmetic science through chemical engineering, and through a simple observation: the skin and hair concerns most common in people who look like me are often the least studied. My scoping review on post-inflammatory hyperpigmentation confirmed it. Of 74 studies, only 12% examined UV-induced PIH in skin of colour specifically.</p>
+          <p>At Afri Botanica, PZ Cussons and Inveo Laboratories, I have built and tested formulations, run stability and QC checks, and worked with African botanicals at bench scale. What I want now is the depth to move from formulating well to designing evidence: understanding skin biology, claims substantiation and clinical testing well enough to develop products that are proven, not just promising, for melanin-rich skin and textured hair.</p>
+          <p>A Master’s in Cosmetic Science is the bridge between the formulator I am and the scientist I intend to become.</p>
+        </div>
+      </div>
+
+      <div class="tiles">
+        <a class="tile" href="#research"><img src="assets/img/pih-illustration.jpg" alt=""><div><b>Research</b><small>PIH in skin of colour, kinetic modelling</small></div></a>
+        <a class="tile" href="#lab"><img src="assets/img/lab-bench.jpg" alt="" style="object-position:50% 35%"><div><b>Formulation lab</b><small>R&amp;D projects and bench work</small></div></a>
+        <a class="tile" href="#events"><img src="assets/img/bim-booth.jpg" alt=""><div><b>Industry events</b><small>Exhibitions and technical days</small></div></a>
+      </div>
+    </section>
+
+    <!-- ================= RESEARCH ================= -->
+    <section class="view" id="research" data-title="Research">
+      <div class="view-head">
+        <div><h2>Research</h2><p>Evidence synthesis on pigmentation in skin of colour, and kinetic modelling from my engineering degree.</p></div>
+      </div>
+
+      <article class="feature">
+        <div class="feature-img"><img src="assets/img/pih-illustration.jpg" alt="Illustration of melanocytes and melanin in layered skin"></div>
+        <div class="feature-body">
+          <span class="status"><i></i>Manuscript under review, Nigerian Journal of Dermatology</span>
+          <h3>A Scoping Review of the Evidence Gap in Chemical- versus UV-Induced Post-Inflammatory Hyperpigmentation Pathways in Skin of Colour</h3>
+          <p class="meta">Nwosu Precious Chinenyenwa (lead author) and Ekanem Mary Magdalene, 2026</p>
+          <p>Clinical guidance often treats chemical and UV triggers of PIH as interchangeable. Following PRISMA-ScR, this review mapped the evidence behind that assumption across PubMed, Dimensions.ai and Cochrane CENTRAL, comparing cytokine, reactive oxygen species and tyrosinase pathway data in Fitzpatrick IV–VI skin.</p>
+          <div class="stat-row">
+            <div><b>730</b><span>unique records screened</span></div>
+            <div><b>74</b><span>studies included</span></div>
+            <div><b>34%</b><span>on acne-treatment chemical PIH</span></div>
+            <div><b>12%</b><span>on UV PIH by skin type</span></div>
+          </div>
+          <p>The result is a strongly asymmetric, largely extrapolated evidence base. The review proposes a minimum reporting standard so future studies disaggregate by Fitzpatrick type.</p>
+          <span class="tag clay">PRISMA-ScR</span><span class="tag clay">Melanogenesis</span><span class="tag clay">Skin of colour</span><span class="tag clay">Evidence mapping</span>
+        </div>
+      </article>
+
+      <div class="figs">
+        <figure data-lb="assets/img/fig-prisma.png" data-cap="PRISMA-ScR flow: 730 records screened, 74 primary studies included."><img src="assets/img/fig-prisma.png" alt="PRISMA flow diagram of the scoping review" loading="lazy"><figcaption>Screening flow under PRISMA-ScR, from 730 records to 74 included studies.</figcaption></figure>
+        <figure data-lb="assets/img/fig-evidence.png" data-cap="Retained PIH studies by trigger category and evidence tier."><img src="assets/img/fig-evidence.png" alt="Bar chart of retained studies by trigger category" loading="lazy"><figcaption>Where the evidence sits: acne-treatment chemical PIH dominates, UV PIH in skin of colour is thin.</figcaption></figure>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <h3>Modelling the kinetics of heavy metal removal from groundwater</h3>
+          <p class="meta">Undergraduate thesis, Chemical Engineering, FUTO, Feb–Jul 2024</p>
+          <p>Built a MATLAB kinetic model for heavy metal uptake and translocation during phytoremediation, fitting logistic growth kinetics to experimental data for lead, copper, chromium and nickel.</p>
+          <div class="kv"><div><b>99.61%</b><span>R² primary adsorption</span></div><div><b>97.8–98.8%</b><span>R² translocation stages</span></div></div>
+        </div>
+        <div class="card">
+          <h3>Plant design: 100,000 t/yr acetic anhydride from Anambra coal</h3>
+          <p class="meta">Group design project, Chemical Engineering, FUTO, Aug 2023–Jul 2024</p>
+          <p>Led the literature review that selected the Monsanto route over Eastman and Cativa on yield and purity, assessed site safety and environmental guidelines, and supported mass and energy balances and economics.</p>
+          <span class="tag">Process design</span><span class="tag">Mass &amp; energy balance</span><span class="tag">Techno-economics</span>
+        </div>
+      </div>
+
+      <h3 class="sub">Science writing</h3>
+      <p class="muted">Explaining skin science in plain language for consumers and formulators.</p>
+      <div class="articles">
+        <a class="card article" href="https://www.linkedin.com/pulse/melanin-prints-understanding-post-inflammatory-skin-colour-nwosu-zdt7f" target="_blank" rel="noopener">
+          <p class="meta">LinkedIn article, November 2025</p>
+          <h3>Melanin Prints: Understanding Post-Inflammatory Hyperpigmentation in Skin of Colour</h3>
+          <p>Why brown skin pigments when inflamed: melanocyte signalling, oxidative stress, the microbiome and barrier damage, with formulation approaches for PIH.</p>
+          <span class="go">Read on LinkedIn</span>
+        </a>
+        <a class="card article" href="https://www.linkedin.com/pulse/sensitive-skin-vs-sensitized-really-any-difference-precious-nwosu-knwof" target="_blank" rel="noopener">
+          <p class="meta">LinkedIn article, March 2025</p>
+          <h3>Sensitive Skin vs Sensitized Skin: Is There Really Any Difference?</h3>
+          <p>Separating two terms often used interchangeably, their common triggers, and how to care for each.</p>
+          <span class="go">Read on LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= LAB ================= -->
+    <section class="view" id="lab" data-title="Formulation lab">
+      <div class="view-head">
+        <div><h2>Formulation lab</h2><p>Selected R&amp;D projects and the bench work behind them. Product images are illustrative.</p></div>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <img src="assets/img/proj-cream.jpg" alt="Illustrative cream-gel moisturiser in a glass jar" loading="lazy">
+          <div class="in">
+            <h3>Reverse engineering a milky serum and cream-gel moisturiser</h3>
+            <p>INCI analysis of INN Beauty Slushy and Dieux Instant Angel to match texture and hydration, then improved versions with ceramides, baobab and hibiscus for barrier support and lower TEWL.</p>
+            <span class="tag">INCI analysis</span><span class="tag">Emulsions</span><span class="tag">African botanicals</span>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/img/proj-shampoo.jpg" alt="Illustrative amber shampoo bottle and foaming beaker" loading="lazy">
+          <div class="in">
+            <h3>Targeted therapeutic haircare with OTC actives</h3>
+            <p>Scalp microbiology and inflammation research guiding an anti-inflammatory scalp cream and spray, anti-dandruff shampoo and growth oil, pairing pramoxine and ketoconazole with botanicals in safe cosmetic ranges.</p>
+            <span class="tag">Scalp science</span><span class="tag">OTC actives</span><span class="tag">Surfactants</span>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/img/proj-serum.jpg" alt="Illustrative serum bottle with dropper" loading="lazy">
+          <div class="in">
+            <h3>Salon-grade professional haircare system</h3>
+            <p>A nine-product line from scalp serum and edge control to shampoos, conditioners and detangling gel, built around KPIs for foam, cleansing, slip, moisture retention and shine.</p>
+            <span class="tag">Product line design</span><span class="tag">Conditioning systems</span><span class="tag">Rheology</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub">At the bench</h3>
+      <p class="muted">Trial batches, texture checks and stability work at Inveo Laboratories. Tap to view.</p>
+      <div class="media-grid" id="benchGrid"></div>
+
+      <h3 class="sub">Technical skills</h3>
+      <div class="skills">
+        <div class="card"><h3>Formulation</h3><span class="tag clay">Emulsion systems</span><span class="tag clay">Surfactant technology</span><span class="tag clay">Rheology</span><span class="tag clay">Cationic conditioning</span><span class="tag clay">Reverse engineering</span></div>
+        <div class="card"><h3>Laboratory and quality</h3><span class="tag">QA/QC analysis</span><span class="tag">HPLC</span><span class="tag">FTIR</span><span class="tag">GMP</span><span class="tag">Stability testing</span><span class="tag">Instrument calibration</span><span class="tag">Documentation</span></div>
+        <div class="card"><h3>Data and tools</h3><span class="tag">MATLAB</span><span class="tag">RStudio</span><span class="tag">Data analysis</span><span class="tag">Technical writing</span><span class="tag">Microsoft Office</span><span class="tag">Google Workspace</span><span class="tag">Canva</span></div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="view" id="experience" data-title="Experience">
+      <div class="view-head">
+        <div><h2>Experience</h2><p>From production lines and QC labs to R&amp;D benches, with a commercial year in between.</p></div>
+      </div>
+
+      <div class="tl">
+        <div class="role">
+          <div>
+            <p class="meta">Aug 2026 – present</p>
+            <h3>Junior R&amp;D Cosmetic Chemist</h3>
+            <p class="org"><a href="https://www.afribotanica.com/" target="_blank" rel="noopener">Afri Botanica</a>, Lagos</p>
+            <ul>
+              <li>Prepare lab trial batches for 50+ skincare, haircare, lip care, fragrance and household hygiene products through iteration and troubleshooting.</li>
+              <li>Run organoleptic, quality and stability testing including freeze-thaw cycles, centrifuge testing, viscosity, pH and specific gravity.</li>
+              <li>Maintain technical documentation of batch results, quality assessments, final formulation sheets and ingredient research.</li>
+            </ul>
+          </div>
+          <button class="pic" data-lb="assets/img/solevo-banner.jpg" data-cap="Representing Afri Botanica at Solevo Technical & Innovation Day, Lagos, 2026"><img src="assets/img/solevo-banner.jpg" alt="Precious in an Afri Botanica shirt at Solevo Technical and Innovation Day" loading="lazy"></button>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">Aug 2025 – Jun 2026</p>
+            <h3>Lubricant Sales Engineer, Management Trainee</h3>
+            <p class="org">Eterna Plc, Ikoyi, Lagos</p>
+            <ul>
+              <li>Grew lubricant sales through third-party retail partnerships and supermarket distribution across 5 key Lagos locations.</li>
+              <li>Ran branding and marketing campaigns that improved product positioning across Eterna stations.</li>
+              <li>Resolved 30+ performance and supply concerns, improving customer retention.</li>
+            </ul>
+          </div>
+          <button class="pic" data-lb="assets/img/eterna-site.jpg" data-cap="On site at Eterna Plc"><img src="assets/img/eterna-site.jpg" alt="Precious in Eterna hard hat and safety vest" loading="lazy"></button>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">Oct 2025</p>
+            <h3>Exhibition Support Chemist</h3>
+            <p class="org"><a href="https://www.inveoresearchlabs.com/" target="_blank" rel="noopener">Inveo Laboratories</a>, Beauty in the Motherland, Lagos</p>
+            <ul>
+              <li>Set up the exhibition booth and delivered live formulation demonstrations to local and international visitors.</li>
+              <li>Explained formulation for the African climate and R&amp;D workflows to 60+ visitors, securing 40+ onboarding registrations.</li>
+            </ul>
+          </div>
+          <button class="pic" data-lb="assets/img/bim-booth.jpg" data-cap="At the Inveo Laboratories booth, Beauty in the Motherland 2025"><img src="assets/img/bim-booth.jpg" alt="Precious in an Inveo lab coat at the Inveo Laboratories booth" loading="lazy" style="object-position:62% 50%"></button>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">Mar 2025 – Nov 2025</p>
+            <h3>Research &amp; Development Intern</h3>
+            <p class="org"><a href="https://www.afribotanica.com/" target="_blank" rel="noopener">Afri Botanica</a>, Lagos</p>
+            <ul>
+              <li>Researched African botanical actives for functionality, compatibility, safety and innovation relevance.</li>
+              <li>Developed formulation templates for skincare and haircare products built on African botanicals.</li>
+              <li>Worked with the R&amp;D team on ideation, troubleshooting and ingredient sourcing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">May 2023 – Aug 2023</p>
+            <h3>Quality Control / Assurance Intern, then Production Engineering Intern</h3>
+            <p class="org">PZ Cussons Nigeria, Ikorodu, Lagos</p>
+            <ul>
+              <li>Tested 30+ raw materials and finished products for pH, viscosity, conductivity, specific gravity, hardness, colour and sensory compliance.</li>
+              <li>Supported safety evaluation across baby care, lotions, creams, hair relaxers, antiseptics and household products.</li>
+              <li>Operated and monitored high-output production equipment, enforced HSE standards and tracked line output.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">Jan 2022 – Apr 2022</p>
+            <h3>Manufacturing Trainee</h3>
+            <p class="org">BIBO Chemicals &amp; Manufacturing Industry, Owerri</p>
+            <ul>
+              <li>Supported large-scale batch manufacturing of sanitisers, germicides, soaps and petroleum jelly.</li>
+              <li>Ran post-production quality checks against release specifications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub">Education</h3>
+      <div class="card edu" style="margin-top:16px">
+        <div class="crest">FUTO</div>
+        <div>
+          <h3>Bachelor of Engineering, Chemical Engineering</h3>
+          <p class="meta" style="margin-bottom:8px"><a href="https://futo.edu.ng/" target="_blank" rel="noopener">Federal University of Technology Owerri</a>, Sep 2018 – Oct 2024. National Merit Scholar.</p>
+          <p style="margin:0;font-size:.94rem">Relevant courses: statistics, biology, organic and analytical chemistry, chemical kinetics, biochemical engineering, separation processes, reaction engineering, polymer science.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+    <section class="view" id="events" data-title="Industry events">
+      <div class="view-head">
+        <div><h2>Industry events</h2><p>Exhibitions, technical days and summits where I represented employers and learned from ingredient suppliers.</p></div>
+      </div>
+      <div class="filters" role="group" aria-label="Filter events by year">
+        <button aria-pressed="true" data-year="all">All</button>
+        <button aria-pressed="false" data-year="2026">2026</button>
+        <button aria-pressed="false" data-year="2025">2025</button>
+      </div>
+
+      <div class="event" data-year="2026">
+        <div>
+          <h3>Solevo Technical &amp; Innovation Day</h3>
+          <p class="when">Lagos, October 2026</p>
+          <span class="tag role-tag">Afri Botanica delegate</span>
+          <p>Live demonstrations and clinical study reports on new ingredient technologies from Evonik, Bluestar Silicones and 3V Sigma.</p>
+        </div>
+        <div class="gallery">
+          <button data-lb="assets/img/solevo-banner.jpg" data-cap="Solevo Technical & Innovation Day, Lagos 2026"><img src="assets/img/solevo-banner.jpg" alt="Precious beside the Solevo Technical and Innovation Day banner" loading="lazy"></button>
+          <button class="wide" data-lb="assets/img/solevo-team.jpg" data-cap="With the Afri Botanica team and Solevo representatives"><img src="assets/img/solevo-team.jpg" alt="Afri Botanica and Solevo team around a demonstration table" loading="lazy"></button>
+        </div>
+      </div>
+
+      <div class="event noimg" data-year="2026">
+        <div>
+          <h3>Cosmetics Connect 2026</h3>
+          <p class="when">Lagos, October 2026</p>
+          <span class="tag role-tag">Afri Botanica representative</span>
+        </div>
+        <div class="gallery"><p>Convened by the Society of Cosmetic Scientists Nigeria and featured by IFSCC, this edition brought professionals together around formulating excellence for global impact.</p></div>
+      </div>
+
+      <div class="event noimg" data-year="2026">
+        <div>
+          <h3>The Eco Well E-Summit</h3>
+          <p class="when">Virtual, December 2024 – September 2026</p>
+          <span class="tag role-tag">Four editions attended</span>
+        </div>
+        <div class="gallery"><p>Sustainable formulation and packaging, clean beauty standards, claims substantiation and responsible ingredient sourcing.</p></div>
+      </div>
+
+      <div class="event" data-year="2025">
+        <div>
+          <h3>Beauty West Africa, 8th edition</h3>
+          <p class="when">Lagos, November 2025</p>
+          <span class="tag role-tag">Personal Assistant to the Founder, Afri Botanica</span>
+          <p>Africa’s largest beauty and cosmetics exhibition, connecting global brands with the West African market. Supported Afri Botanica’s founder, a guest speaker.</p>
+        </div>
+        <div class="gallery">
+          <button data-lb="assets/img/bwa-grace.jpg" data-cap="With Grace Oriaghan, Founder of Afri Botanica and guest speaker, Beauty West Africa 2025"><img src="assets/img/bwa-grace.jpg" alt="Precious with Grace Oriaghan at the sponsors wall" loading="lazy"></button>
+          <button data-lb="assets/img/bwa-stage.jpg" data-cap="Main stage, Beauty West Africa 2025"><img src="assets/img/bwa-stage.jpg" alt="Precious in front of the Beauty West Africa stage" loading="lazy"></button>
+          <button data-lb="assets/img/bwa-floor.jpg" data-cap="Exhibition floor, Beauty West Africa 2025"><img src="assets/img/bwa-floor.jpg" alt="Precious on the exhibition floor" loading="lazy"></button>
+        </div>
+      </div>
+
+      <div class="event" data-year="2025">
+        <div>
+          <h3>Beauty in the Motherland</h3>
+          <p class="when">Lagos, October 2025</p>
+          <span class="tag role-tag">Exhibition Support Chemist, Inveo Laboratories</span>
+          <p>Africa’s biggest indigenous beauty event. Ran live formulation demonstrations at the Inveo Laboratories booth, alongside Multichem (Solevo Group) and Evonik.</p>
+        </div>
+        <div class="gallery">
+          <button data-lb="assets/img/bim-booth.jpg" data-cap="Inveo Laboratories booth, Beauty in the Motherland 2025"><img src="assets/img/bim-booth.jpg" alt="Precious at the Inveo Laboratories booth" loading="lazy" style="object-position:62% 50%"></button>
+          <button class="wide" data-lb="assets/img/bim-team.jpg" data-cap="With the Inveo Laboratories team"><img src="assets/img/bim-team.jpg" alt="Inveo Laboratories team at the booth" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEADERSHIP ================= -->
+    <section class="view" id="leadership" data-title="Leadership">
+      <div class="view-head">
+        <div><h2>Leadership and service</h2><p>Professional society work, national service and campus leadership.</p></div>
+      </div>
+      <div class="lead-grid">
+        <div class="card lead">
+          <h3>Scientific Journal &amp; Research Committee Member</h3>
+          <p class="meta">Society of Cosmetic Scientists Nigeria (NICOS), May 2026 – present</p>
+          <ul><li>Review and curate scientific content for publication.</li><li>Support research frameworks and editorial guidelines for the Nigerian cosmetic science community.</li></ul>
+        </div>
+        <div class="card lead">
+          <h3>Membership, Recruitment &amp; Event Committee Associate</h3>
+          <p class="meta">NICOS, Jan 2026 – present</p>
+          <ul><li>Organise in-house and public scientific events on industry trends.</li><li>Review applications from prospective members.</li></ul>
+        </div>
+        <div class="card lead with-img">
+          <button data-lb="assets/img/nysc.jpg" data-cap="National Youth Service Corps, 2025–2026"><img src="assets/img/nysc.jpg" alt="Precious in NYSC uniform" loading="lazy"></button>
+          <div>
+            <h3>SERVICOM &amp; Gender Equality Community Development Service</h3>
+            <p class="meta">National Youth Service Corps, Jul 2025 – May 2026</p>
+            <ul><li>Community sensitisation on service delivery standards, citizen rights and gender equality.</li><li>Planned, documented and ran inclusivity campaigns in marginalised areas.</li></ul>
+          </div>
+        </div>
+        <div class="card lead">
+          <h3>Beauty Research Collaborator</h3>
+          <p class="meta">Anera Research Hub, Mar – Jul 2026</p>
+          <ul><li>Contributed weekly research articles on beauty in the African landscape.</li><li>Supported consumer trend surveys building a dataset for African consumers.</li></ul>
+        </div>
+        <div class="card lead">
+          <h3>Publicity Team Member</h3>
+          <p class="meta">UNICEF x Unilever FUTURE-X Campus Ambassador Program, FUTO, 2024</p>
+          <ul><li>Publicity that drove 4,000+ student registrations for Unilever entrepreneurship courses.</li><li>Helped mobilise 3,545 attendees for an on-campus career seminar.</li></ul>
+        </div>
+        <div class="card lead">
+          <h3>Programs and Outreach Lead</h3>
+          <p class="meta">Redeemed Christian Fellowship, FUTO, 2021 – 2024</p>
+          <ul><li>Coordinated weekly programmes across a culturally diverse team.</li><li>Organised welfare-focused projects each semester.</li></ul>
+        </div>
+        <div class="card lead">
+          <h3>Welfare and Protocol Support</h3>
+          <p class="meta">Nigerian Institute of Environmental Engineers, Imo Chapter, 2022</p>
+          <ul><li>Venue, registration and guest welfare for the World Environment Day Lecture, “Only One Earth”.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CREDENTIALS ================= -->
+    <section class="view" id="credentials" data-title="Credentials">
+      <div class="view-head">
+        <div><h2>Honours and credentials</h2><p>Awards, verified certifications, memberships and languages.</p></div>
+      </div>
+
+      <div class="honour">
+        <div class="card">
+          <h3>National Merit Scholarship Award</h3>
+          <p class="meta">Federal Scholarship Board, 2020 – 2024</p>
+          <p style="margin:0">Selected from 5,000+ applicants nationwide for sustained academic distinction; ₦250,000 per session throughout undergraduate study.</p>
+        </div>
+        <div class="card">
+          <h3>Leadership &amp; Service Award</h3>
+          <p class="meta">Redeemed Christian Fellowship, FUTO, 2024</p>
+          <p style="margin:0">For outstanding service and leadership, and for building group unity through inclusive outreach.</p>
+        </div>
+      </div>
+
+      <h3 class="sub" style="margin-top:44px">Certifications</h3>
+      <p class="muted">Select a title to verify it.</p>
+      <ul class="certs">
+        <li><a href="https://coursera.org/share/86e299a2528560f47d37ca50bdd0efae" target="_blank" rel="noopener">Drug Development</a><span class="by">UC San Diego</span><span class="dt">Nov 2026</span></li>
+        <li><a href="https://coursera.org/share/70ce089327467697edc6eacef64aee36" target="_blank" rel="noopener">Health Impacts of Chemicals in Consumer Products</a><span class="by">University of Michigan</span><span class="dt">Aug 2026</span></li>
+        <li><a href="https://coursera.org/share/ca4dbb7a366d02a8e5fb9b9330e48f1f" target="_blank" rel="noopener">Introduction to Personal Care Science (MBS)</a><span class="by">Rutgers University</span><span class="dt">Aug 2026</span></li>
+        <li><a href="https://drive.google.com/file/d/16erjbdzhOph7k9EduvP1MDwC9WSsz3aW/view" target="_blank" rel="noopener">Aspire Leaders Program</a><span class="by">Aspire Institute</span><span class="dt">Jul 2026</span></li>
+        <li><a href="https://drive.google.com/file/d/1362LP2k18Qci5HQcjdVVBKgjBUeSXUEk/view" target="_blank" rel="noopener">Forward Learners Program</a><span class="by">McKinsey</span><span class="dt">Jun 2026</span></li>
+        <li><a href="https://alison.com/verify/75272f23c5" target="_blank" rel="noopener">ISO/IEC 17025:2017 Laboratory Management Systems</a><span class="by">Alison</span><span class="dt">Feb 2026</span></li>
+        <li><a href="https://alison.com/verify/12619168b5" target="_blank" rel="noopener">Fundamentals of the FD&amp;C Act</a><span class="by">Alison</span><span class="dt">Dec 2025</span></li>
+        <li><a href="https://alison.com/verify/22ae0372dd" target="_blank" rel="noopener">Good Manufacturing Practices for Product Quality</a><span class="by">Alison</span><span class="dt">Nov 2025</span></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/T072N3Z6ADRJ" target="_blank" rel="noopener">Quality Control &amp; Regulatory in Cosmetic Science</a><span class="by">Olay</span><span class="dt">Mar 2025</span></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/98Z7AG3ROLJZ" target="_blank" rel="noopener">Cosmetic Product Development</a><span class="by">Olay</span><span class="dt">Feb 2025</span></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/J6YK8LCJRH28" target="_blank" rel="noopener">Cosmetic Formulation Science</a><span class="by">Olay</span><span class="dt">Dec 2024</span></li>
+        <li><a href="https://www.coursera.org/account/accomplishments/verify/BIW01BJOCW05" target="_blank" rel="noopener">Introduction to Cosmetics &amp; Skincare Science</a><span class="by">Olay</span><span class="dt">Oct 2024</span></li>
+        <li><a href="https://drive.google.com/file/d/1jytbfHSv5_sO4pelIyvfh_AOfhg49fIL/view" target="_blank" rel="noopener">Occupational Safety &amp; Health Supervisor (HSE 1, 2, 3)</a><span class="by">OSHAssociation UK</span><span class="dt">Dec 2021</span></li>
+        <li><span style="font-weight:600">Technical Writing</span><span class="by">Google</span><span class="dt">Oct 2021</span></li>
+      </ul>
+
+      <h3 class="sub" style="margin-top:44px">Professional memberships</h3>
+      <div class="aff">
+        <div class="card"><b>IFSCC</b><span>International Federation of Societies of Cosmetic Chemists, since Mar 2026</span></div>
+        <div class="card"><b>NICOS</b><span>Society of Cosmetic Scientists Nigeria, since Jan 2026</span></div>
+        <div class="card"><b>ASM</b><span>American Society for Microbiology, since Jan 2026</span></div>
+        <div class="card"><b>NSChE</b><span>Nigerian Society of Chemical Engineers, since Sep 2020</span></div>
+      </div>
+
+      <h3 class="sub" style="margin-top:44px">Languages</h3>
+      <div class="langs">
+        <div class="lang"><b>English</b> <span class="muted">C2</span><div class="bar"><i style="width:100%"></i></div></div>
+        <div class="lang"><b>Spanish</b> <span class="muted">A2</span><div class="bar"><i style="width:34%"></i></div></div>
+        <div class="lang"><b>French</b> <span class="muted">A1</span><div class="bar"><i style="width:17%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="view" id="contact" data-title="Contact">
+      <div class="view-head">
+        <div><h2>Contact</h2><p>Open to Master’s scholarship conversations, research collaborations and formulation work.</p></div>
+      </div>
+      <div class="contact">
+        <div class="big">
+          <h2>Let’s talk formulation science</h2>
+          <p>If you run a cosmetic science programme, a scholarship or a lab working on skin of colour, I would be glad to hear from you.</p>
+          <a class="btn" href="mailto:nwosuprcs@gmail.com">nwosuprcs@gmail.com</a>
+        </div>
+        <div class="card">
+          <ul>
+            <li><small>Email</small><a href="mailto:nwosuprcs@gmail.com">nwosuprcs@gmail.com</a></li>
+            <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/nwosu-prcs" target="_blank" rel="noopener">linkedin.com/in/nwosu-prcs</a></li>
+            <li><small>Based in</small>Lagos, Nigeria</li>
+            <li><small>CV</small><a href="assets/docs/Nwosu_Precious_CV.pdf" download>Download the latest PDF</a></li>
+            <li><small>References</small>Available on request from Grace Oriaghan (<a href="https://www.afribotanica.com/" target="_blank" rel="noopener">Afri Botanica</a>) and Ekanem Mary Magdalene (<a href="https://www.inveoresearchlabs.com/" target="_blank" rel="noopener">Inveo Laboratories</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <div class="lb-inner" id="lbInner"></div>
+</div>
+
+<script>
+/* ---------- Bench videos and photos (edit captions here) ---------- */
+const bench = [
+  {type:"video", src:"assets/video/lab-1.mp4", poster:"assets/video/lab-1.jpg", cap:"Checking cream texture"},
+  {type:"img",   src:"assets/img/lab-surfactant.jpg", cap:"Surfactant blend for a shampoo trial"},
+  {type:"video", src:"assets/video/lab-2.mp4", poster:"assets/video/lab-2.jpg", cap:"Mixing a surfactant system"},
+  {type:"video", src:"assets/video/lab-4.mp4", poster:"assets/video/lab-4.jpg", cap:"Weighing at the bench"},
+  {type:"img",   src:"assets/img/lab-samples.jpg", cap:"Trial samples held for stability observation"},
+  {type:"video", src:"assets/video/lab-3.mp4", poster:"assets/video/lab-3.jpg", cap:"Filling a sample bottle"},
+  {type:"video", src:"assets/video/lab-7.mp4", poster:"assets/video/lab-7.jpg", cap:"Clarity check on a solution"},
+  {type:"video", src:"assets/video/lab-8.mp4", poster:"assets/video/lab-8.jpg", cap:"Labelled trial batch"},
+  {type:"video", src:"assets/video/lab-5.mp4", poster:"assets/video/lab-5.jpg", cap:"Inspecting a finished sample"},
+  {type:"video", src:"assets/video/lab-6.mp4", poster:"assets/video/lab-6.jpg", cap:"Dispensing test"},
+  {type:"img",   src:"assets/img/lab-bench.jpg", cap:"At work in the Inveo Laboratories lab"}
+];
+const grid = document.getElementById("benchGrid");
+bench.forEach(m=>{
+  const b=document.createElement("button");
+  b.className="media";
+  b.dataset.lb=m.src; b.dataset.cap=m.cap; if(m.type==="video") b.dataset.video="1";
+  b.innerHTML=`<img src="${m.type==="video"?m.poster:m.src}" alt="${m.cap}" loading="lazy">${m.type==="video"?'<span class="play"><i></i></span>':''}<span>${m.cap}</span>`;
+  grid.appendChild(b);
+});
+
+/* ---------- Routing between sections ---------- */
+const views=[...document.querySelectorAll(".view")];
+document.querySelectorAll("[data-nav]").forEach(nav=>{
+  views.forEach(v=>{
+    const a=document.createElement("a"); a.href="#"+v.id; a.textContent=v.dataset.title;
+    if(nav.tagName==="UL"){const li=document.createElement("li");li.appendChild(a);nav.appendChild(li);} else nav.appendChild(a);
+  });
+});
+views.forEach((v,i)=>{
+  const prev=views[i-1], next=views[i+1];
+  const p=document.createElement("div"); p.className="pager";
+  p.innerHTML=(prev?`<a href="#${prev.id}"><small>Previous</small>${prev.dataset.title}</a>`:"<span></span>")+
+              (next?`<a href="#${next.id}" style="text-align:right"><small>Next</small>${next.dataset.title}</a>`:"");
+  v.appendChild(p);
+});
+function show(){
+  const id=(location.hash||"#home").slice(1);
+  const target=views.find(v=>v.id===id)||views[0];
+  views.forEach(v=>v.classList.toggle("on",v===target));
+  document.querySelectorAll("[data-nav] a").forEach(a=>{
+    a.getAttribute("href")==="#"+target.id?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current");
+  });
+  const cur=document.querySelector(".topnav a[aria-current]"); if(cur) cur.scrollIntoView({inline:"center",block:"nearest"});
+  document.title=(target.id==="home"?"":target.dataset.title+" | ")+"Nwosu Precious Chinenyenwa";
+  window.scrollTo(0,0);
+}
+addEventListener("hashchange",show); show();
+
+/* ---------- Event filter ---------- */
+document.querySelectorAll(".filters button").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button").forEach(b=>b.setAttribute("aria-pressed",b===btn));
+  document.querySelectorAll(".event").forEach(e=>e.style.display=(btn.dataset.year==="all"||e.dataset.year===btn.dataset.year)?"":"none");
+}));
+
+/* ---------- Lightbox ---------- */
+const lb=document.getElementById("lb"), inner=document.getElementById("lbInner");
+let lastFocus=null;
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-lb]"); if(!t) return;
+  lastFocus=t;
+  const cap=t.dataset.cap||"";
+  inner.innerHTML=(t.dataset.video?`<video src="${t.dataset.lb}" controls autoplay muted playsinline loop></video>`:`<img src="${t.dataset.lb}" alt="${cap}">`)+(cap?`<p>${cap}</p>`:"");
+  lb.classList.add("on"); lb.querySelector(".lb-close").focus();
+});
+function closeLb(){lb.classList.remove("on");inner.innerHTML="";if(lastFocus)lastFocus.focus();}
+lb.addEventListener("click",e=>{if(e.target===lb||e.target.classList.contains("lb-close"))closeLb();});
+addEventListener("keydown",e=>{if(e.key==="Escape"&&lb.classList.contains("on"))closeLb();});
+</script>
+</body>
+</html>
