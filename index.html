@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nwosu Precious Chinenyenwa | Cosmetic Scientist</title>
-<meta name="description" content="Nwosu Precious Chinenyenwa: chemical engineer and R&D cosmetic chemist formulating science-backed skin and hair care for skin of colour. Seeking a Master’s in Cosmetic Science.">
+<meta name="description" content="Nwosu Precious Chinenyenwa: chemical engineer and R&D cosmetic chemist formulating science-backed skin and hair care for skin of colour. Formulation projects, research, industry engagement and certifications.">
 <meta property="og:title" content="Nwosu Precious Chinenyenwa | Cosmetic Scientist">
 <meta property="og:description" content="Chemical engineer and R&D cosmetic chemist formulating for melanin-rich skin and textured hair.">
 <meta property="og:image" content="assets/img/headshot.jpg">
@@ -79,6 +79,8 @@ p{margin:0 0 1em}
 .hero-copy{position:relative;z-index:1;padding:clamp(28px,5vw,60px);display:flex;flex-direction:column;justify-content:center;background:linear-gradient(115deg,var(--surface) 55%,transparent),url(assets/img/texture.jpg) center/cover}
 .hero h1{font-size:clamp(2.8rem,6vw,5rem);letter-spacing:-.02em;font-weight:600}
 .hero h1 small{display:block;font-size:.42em;letter-spacing:0;color:var(--muted);font-weight:500;margin-top:10px}
+.hello{font-size:.95rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:500}
+.hero-actions{margin-top:30px}
 .hero .lede{font-size:1.15rem;max-width:44ch;margin:26px 0 30px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 .hero-photo{position:relative;background:url(assets/img/texture.jpg) center/cover}
@@ -92,8 +94,9 @@ p{margin:0 0 1em}
 .facts span{font-size:.87rem;color:var(--muted)}
 .why{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;margin-top:64px;align-items:start}
 .why h2{font-size:clamp(2rem,3.4vw,2.8rem)}
-.why .body p{font-family:var(--serif);font-size:1.32rem;line-height:1.55}
-.why .body p:last-child{color:var(--clay);font-weight:600}
+.why .body p{font-size:1.04rem;line-height:1.75}
+.why .body .pull{font-family:var(--serif);font-size:1.5rem;line-height:1.4;color:var(--clay);font-weight:600;border-left:3px solid var(--clay);padding-left:20px;margin:28px 0}
+.why .body .welcome{color:var(--muted)}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px}
 .tile{position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:4/3;text-decoration:none;color:#fff}
 .tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
@@ -142,6 +145,24 @@ figure{margin:0}
 .project .in{padding:24px}
 .project h3{font-size:1.4rem;margin-bottom:10px}
 .project p{font-size:.94rem}
+.sysnav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.sysnav a{font-size:.86rem;font-weight:600;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none}
+.sysnav a:hover{border-color:var(--clay);color:var(--clay)}
+.sys{scroll-margin-top:90px}
+.sys-title{font-size:1.9rem;margin:48px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.formula{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;margin-bottom:22px}
+.formula.flip .formula-img{order:2}
+.formula-img{border:0;padding:0;background:var(--line);cursor:zoom-in;display:block}
+.formula-img img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.formula-body{padding:clamp(22px,3.4vw,38px)}
+.formula .where{font-size:.8rem;color:var(--sage);font-weight:600;margin-bottom:8px}
+.formula h4{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.15;margin:0 0 12px}
+.formula .tags{margin-bottom:6px}
+.formula .lbl{font-weight:700;font-size:.82rem;color:var(--clay);margin:14px 0 4px}
+.formula p{font-size:.95rem}
+.formula ul{margin:0;padding-left:18px;font-size:.93rem}
+.formula li{margin-bottom:6px}
+.formula li b{font-weight:600}
 .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
 .skills h3{font-size:1.25rem;margin-bottom:12px}
 .media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
@@ -189,6 +210,8 @@ figure{margin:0}
 .lead ul{margin:0;padding-left:18px;font-size:.95rem}
 .lead.with-img{display:grid;grid-template-columns:150px 1fr;gap:22px;grid-column:span 2}
 .lead.with-img button{border:0;padding:0;background:none;cursor:zoom-in}
+.lead.two-img{grid-template-columns:240px 1fr}
+.lead .pics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .lead.with-img img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
 
 /* Credentials */
@@ -204,7 +227,14 @@ figure{margin:0}
 .certs a::after{content:" ↗";color:var(--clay);font-size:.85em}
 .certs .by{color:var(--muted);font-size:.9rem}
 .certs .dt{color:var(--muted);font-size:.85rem;text-align:right}
-.aff{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.certmem{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.mem{display:grid;grid-template-columns:1fr 170px;gap:20px;align-items:center}
+.mem b{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1.1}
+.mem .post{display:block;color:var(--clay);font-weight:600;font-size:.9rem;margin:6px 0}
+.mem > div span:last-child{font-size:.86rem;color:var(--muted)}
+.mem button{border:1px solid var(--line);padding:0;background:#fff;border-radius:10px;overflow:hidden;cursor:zoom-in}
+.mem img{width:100%;height:150px;object-fit:contain;background:#fff}
+.aff{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:20px}
 .aff div b{display:block;font-family:var(--serif);font-size:1.25rem;line-height:1.2}
 .aff div span{font-size:.82rem;color:var(--muted)}
 .langs{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
@@ -257,15 +287,22 @@ figure{margin:0}
   .tiles,.projects,.skills{grid-template-columns:1fr 1fr}
   .media-grid{grid-template-columns:repeat(3,1fr)}
   .role{grid-template-columns:1fr}
+  .formula{grid-template-columns:1fr}
+  .formula.flip .formula-img{order:0}
+  .formula-img img{min-height:0;aspect-ratio:4/3}
   .role .pic{max-width:300px}
   .aff{grid-template-columns:1fr 1fr}
+  .certmem{grid-template-columns:1fr}
   .certs li{grid-template-columns:1fr auto}
   .certs .by{grid-column:1;grid-row:2;margin-top:-10px}
   .certs .dt{grid-row:1/3;grid-column:2}
 }
 @media (max-width:620px){
+  .mem{grid-template-columns:1fr 120px}
   .tiles,.projects,.skills,.lead-grid{grid-template-columns:1fr}
   .lead.with-img{grid-column:auto;grid-template-columns:110px 1fr}
+  .lead.two-img{grid-template-columns:1fr}
+  .lead .pics{max-width:260px}
   .media-grid{grid-template-columns:1fr 1fr}
   .stat-row{grid-template-columns:1fr 1fr}
   .gallery .wide{grid-column:auto}
@@ -307,13 +344,12 @@ figure{margin:0}
     <section class="view" id="home" data-title="Overview">
       <div class="hero">
         <div class="hero-copy">
-          <h1>Nwosu Precious Chinenyenwa<small>Chemical engineer formulating science-backed skin and hair care for skin of colour</small></h1>
-          <p class="lede">Junior R&amp;D Cosmetic Chemist at Afri Botanica, Lagos. BEng Chemical Engineering, FUTO. Lead author of a scoping review on post-inflammatory hyperpigmentation in Fitzpatrick IV–VI skin.</p>
+          <p class="hello">Hello, I’m</p>
+          <h1>Nwosu Precious Chinenyenwa<small>R&amp;D Cosmetic Chemist, Chemical Engineering Graduate</small></h1>
           <div class="hero-actions">
             <a class="btn btn-solid" href="#research">See my research</a>
             <a class="btn btn-line" href="assets/docs/Nwosu_Precious_CV.pdf" download>Download CV</a>
           </div>
-          <span class="seeking"><i></i>Seeking a funded Master’s in Cosmetic Science or Formulation Science</span>
         </div>
         <div class="hero-photo"><img src="assets/img/headshot.jpg" alt="Portrait of Nwosu Precious Chinenyenwa"></div>
       </div>
@@ -326,17 +362,18 @@ figure{margin:0}
       </div>
 
       <div class="why">
-        <h2>Why a Master’s, and why now</h2>
+        <h2>About me</h2>
         <div class="body">
-          <p>I came to cosmetic science through chemical engineering, and through a simple observation: the skin and hair concerns most common in people who look like me are often the least studied. My scoping review on post-inflammatory hyperpigmentation confirmed it. Of 74 studies, only 12% examined UV-induced PIH in skin of colour specifically.</p>
-          <p>At Afri Botanica, PZ Cussons and Inveo Laboratories, I have built and tested formulations, run stability and QC checks, and worked with African botanicals at bench scale. What I want now is the depth to move from formulating well to designing evidence: understanding skin biology, claims substantiation and clinical testing well enough to develop products that are proven, not just promising, for melanin-rich skin and textured hair.</p>
-          <p>A Master’s in Cosmetic Science is the bridge between the formulator I am and the scientist I intend to become.</p>
+          <p>I am a Chemical Engineer and Cosmetic Chemist with professional experience spanning research and development, quality control analysis, and product formulation in beauty and personal care manufacturing. I hold a Bachelor of Engineering degree in Chemical Engineering, with an academic foundation in chemical processes, transport phenomena, process design, reaction engineering and materials science. My multidisciplinary training and industry experience at Afri Botanica, Inveo Laboratories and PZ Cussons has equipped me with an understanding of both the scientific and practical dimensions of cosmetic product development.</p>
+          <p>My research interests center on transdermal and topical delivery systems for bioactive compounds, hair fiber science and scalp biology, and hyperpigmentation in skin of colour; with my most recent work on the evidence gaps in chemical- versus UV-induced post-inflammatory hyperpigmentation in skin of colour. I have hands-on capability in the development of evidence-based products for melanin-rich skin and textured hair, ingredient compatibility assessment, stability evaluation, quality testing, and ethnobotanical research.</p>
+          <p class="pull">For me, the next frontier in cosmetic innovation is not simply developing more products, but researching better science to make those products safer, more effective and more inclusive.</p>
+          <p class="welcome">Welcome to my portfolio, where you can learn about my experiences, formulation projects, industry engagements and certifications.</p>
         </div>
       </div>
 
       <div class="tiles">
         <a class="tile" href="#research"><img src="assets/img/pih-illustration.jpg" alt=""><div><b>Research</b><small>PIH in skin of colour, kinetic modelling</small></div></a>
-        <a class="tile" href="#lab"><img src="assets/img/lab-bench.jpg" alt="" style="object-position:50% 35%"><div><b>Formulation lab</b><small>R&amp;D projects and bench work</small></div></a>
+        <a class="tile" href="#lab"><img src="assets/img/lab-bench.jpg" alt="" style="object-position:50% 35%"><div><b>Formulation lab</b><small>Nine formulation projects and bench work</small></div></a>
         <a class="tile" href="#events"><img src="assets/img/bim-booth.jpg" alt=""><div><b>Industry events</b><small>Exhibitions and technical days</small></div></a>
       </div>
     </section>
@@ -406,38 +443,134 @@ figure{margin:0}
     <!-- ================= LAB ================= -->
     <section class="view" id="lab" data-title="Formulation lab">
       <div class="view-head">
-        <div><h2>Formulation lab</h2><p>Selected R&amp;D projects and the bench work behind them. Product images are illustrative.</p></div>
+        <div><h2>Formulation lab</h2><p>Nine formulations across four systems, with the overview and rationale behind each. Product images are illustrative.</p></div>
       </div>
 
-      <div class="projects">
-        <article class="project">
-          <img src="assets/img/proj-cream.jpg" alt="Illustrative cream-gel moisturiser in a glass jar" loading="lazy">
-          <div class="in">
-            <h3>Reverse engineering a milky serum and cream-gel moisturiser</h3>
-            <p>INCI analysis of INN Beauty Slushy and Dieux Instant Angel to match texture and hydration, then improved versions with ceramides, baobab and hibiscus for barrier support and lower TEWL.</p>
-            <span class="tag">INCI analysis</span><span class="tag">Emulsions</span><span class="tag">African botanicals</span>
+      <nav class="sysnav" aria-label="Formulation systems">
+<a href="#lab" data-jump="sys-emulsion-and-structuring-systems">Emulsion and structuring systems</a>
+<a href="#lab" data-jump="sys-surfactant-systems">Surfactant systems</a>
+<a href="#lab" data-jump="sys-cationic-conditioning-systems">Cationic conditioning systems</a>
+<a href="#lab" data-jump="sys-active-based-systems">Active-based systems</a>
+</nav>
+<div class="sys" id="sys-emulsion-and-structuring-systems"><h3 class="sys-title">Emulsion and structuring systems</h3>
+<article class="formula">
+          <button class="formula-img" data-lb="assets/img/proj-cream.jpg" data-cap="Hydrating Body Lotion (illustrative image)"><img src="assets/img/proj-cream.jpg" alt="Illustrative image of hydrating body lotion" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 1 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Hydrating Body Lotion</h4>
+            <div class="tags"><span class="tag clay">pH 5.5</span><span class="tag clay">Oil-in-water</span></div>
+            <p class="lbl">Project overview</p>
+            <p>An oil-in-water moisturising body lotion developed to provide skin hydration and softness through a combination of emollients, humectants and skin-conditioning ingredients at a pH of 5.5.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Emulsion system:</b> LotionPro 165, cetyl alcohol and stearic acid for emulsification, viscosity development and structural support.</li><li><b>Emollients:</b> Shea butter and sunflower oil for skin conditioning and emollience.</li><li><b>Hydration system:</b> Glycerin, hyaluronic acid and panthenol for humectant support.</li><li><b>Rheology and preservation:</b> Xanthan gum for viscosity modification, Disodium EDTA as chelator and Liquid Germall Plus as preservative.</li></ul>
           </div>
         </article>
-        <article class="project">
-          <img src="assets/img/proj-shampoo.jpg" alt="Illustrative amber shampoo bottle and foaming beaker" loading="lazy">
-          <div class="in">
-            <h3>Targeted therapeutic haircare with OTC actives</h3>
-            <p>Scalp microbiology and inflammation research guiding an anti-inflammatory scalp cream and spray, anti-dandruff shampoo and growth oil, pairing pramoxine and ketoconazole with botanicals in safe cosmetic ranges.</p>
-            <span class="tag">Scalp science</span><span class="tag">OTC actives</span><span class="tag">Surfactants</span>
+<article class="formula flip">
+          <button class="formula-img" data-lb="assets/img/proj-scrub.jpg" data-cap="Emulsified Body Scrub (illustrative image)"><img src="assets/img/proj-scrub.jpg" alt="Illustrative image of emulsified body scrub" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 2 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Emulsified Body Scrub</h4>
+            <div class="tags"><span class="tag clay">Rinse-off</span><span class="tag clay">Multi-particle exfoliant</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of an emulsified exfoliating body scrub combining sugar and particulate exfoliants with a rich conditioning system. The formulation integrates cleansing agents and emollients to provide physical exfoliation alongside a creamy, rinse-off application.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Exfoliating system:</b> Combination of sugar, walnut shell and bamboo silica to create a multi-particle exfoliating system.</li><li><b>Emulsion and structuring:</b> Emulsifying wax and stearic acid for emulsion formation and consistency.</li><li><b>Cleansing system:</b> Alpha Olefin Sulfonate (AOS) powder and Cocamidopropyl betaine for cleansing and rinse-off properties.</li><li><b>Emollient system:</b> Shea butter and sunflower oil for skin conditioning.</li><li><b>Humectant:</b> Glycerin for moisture retention.</li></ul>
           </div>
         </article>
-        <article class="project">
-          <img src="assets/img/proj-serum.jpg" alt="Illustrative serum bottle with dropper" loading="lazy">
-          <div class="in">
-            <h3>Salon-grade professional haircare system</h3>
-            <p>A nine-product line from scalp serum and edge control to shampoos, conditioners and detangling gel, built around KPIs for foam, cleansing, slip, moisture retention and shine.</p>
-            <span class="tag">Product line design</span><span class="tag">Conditioning systems</span><span class="tag">Rheology</span>
+</div>
+<div class="sys" id="sys-surfactant-systems"><h3 class="sys-title">Surfactant systems</h3>
+<article class="formula">
+          <button class="formula-img" data-lb="assets/img/proj-clarify.jpg" data-cap="Clarifying Shampoo (illustrative image)"><img src="assets/img/proj-clarify.jpg" alt="Illustrative image of clarifying shampoo" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 3 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Clarifying Shampoo</h4>
+            <div class="tags"><span class="tag clay">pH 5</span><span class="tag clay">ASM 15%</span><span class="tag clay">Pearlescent</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of a pearlescent, sulphate-based clarifying shampoo formulated with an anionic-amphoteric surfactant blend for cleansing performance, supported by conditioning polymers and a cooling agent for soothing washing experience. Formula has Active Surfactant Matter at 15% and pH of 5.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Surfactant system:</b> Sodium Laureth Sulfate (SLES) and Cocamidopropyl Betaine (CAPB) for primary cleansing.</li><li><b>Conditioning system:</b> Polyquaternium-7, Guar Hydroxypropyltrimonium Chloride, and Hydrolyzed Silk Protein for conditioning and nourished hair feel.</li><li><b>Pearlescent system:</b> Ethylene Glycol Distearate heated in oil phase for opacity and pearlescence development.</li><li><b>Sensory modification:</b> Menthol for a cooling sensation, with sweet orange and lavender essential oils for fragrance.</li><li><b>Viscosity and preservation:</b> Sodium chloride for surfactant thickening and Liquid Germall Plus for preservation.</li></ul>
           </div>
         </article>
-      </div>
+<article class="formula flip">
+          <button class="formula-img" data-lb="assets/img/proj-cleanser.jpg" data-cap="Foaming Face Cleanser (illustrative image)"><img src="assets/img/proj-cleanser.jpg" alt="Illustrative image of foaming face cleanser" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 4 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Foaming Face Cleanser</h4>
+            <div class="tags"><span class="tag clay">pH 5.5</span><span class="tag clay">ASM 8%</span><span class="tag clay">Mild</span></div>
+            <p class="lbl">Project overview</p>
+            <p>A gentle foaming facial cleanser combining amphoteric and non-ionic surfactants to provide effective cleansing while maintaining a mild formulation profile and incorporating botanical ingredients. Formula has Active Surfactant Matter (ASM) at 8% and pH of 5.5.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Surfactant:</b> Cocamidopropyl Betaine and Decyl Glucoside for synergistic cleansing and foam generation.</li><li><b>Botanical components:</b> Licorice extract and cucumber hydrosol for skin-conditioning and soothing properties.</li><li><b>Humectant system:</b> Glycerin to support skin hydration.</li><li><b>Preservation and chelation:</b> Liquid Germall Plus and Disodium EDTA for product preservation and metal-ion control.</li></ul>
+          </div>
+        </article>
+<article class="formula">
+          <button class="formula-img" data-lb="assets/img/proj-shampoo.jpg" data-cap="Anti-dandruff Shampoo (illustrative image)"><img src="assets/img/proj-shampoo.jpg" alt="Illustrative image of anti-dandruff shampoo" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 5 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Anti-dandruff Shampoo</h4>
+            <div class="tags"><span class="tag clay">pH 5</span><span class="tag clay">ASM 20%</span><span class="tag clay">Multi-active</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of a multi-active anti-dandruff shampoo combining an anionic-amphoteric-nonionic surfactant system with antifungal and keratolytic ingredients. The formulation was designed to support scalp cleansing and dandruff management while incorporating conditioning components. This formulation was set at an ASM of 20% and pH of 5.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Cleansing system:</b> Sodium Lauroyl Sarcosinate, Alpha Olefin Sulfonate, Cocamidopropyl Betaine and Decyl Glucoside for complementary cleansing and foaming properties.</li><li><b>Anti-dandruff actives:</b> Piroctone Olamine and Climbazole as antifungal agents, supported by salicylic acid as a keratolytic ingredient.</li><li><b>Solubilisation:</b> Propylene Glycol incorporated to support the delivery of selected active ingredients.</li><li><b>Conditioning and structuring:</b> Guar Hydroxypropyltrimonium Chloride, Cocamide MEA and PEG-150 Distearate for conditioning and viscosity development. Liquid pearliser for visual appeal.</li></ul>
+          </div>
+        </article>
+</div>
+<div class="sys" id="sys-cationic-conditioning-systems"><h3 class="sys-title">Cationic conditioning systems</h3>
+<article class="formula flip">
+          <button class="formula-img" data-lb="assets/img/proj-conditioner.jpg" data-cap="3-in-1 Hair Conditioner (illustrative image)"><img src="assets/img/proj-conditioner.jpg" alt="Illustrative image of 3-in-1 hair conditioner" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 6 · Developed at Afri Botanica R&amp;D</p>
+            <h4>3-in-1 Hair Conditioner</h4>
+            <div class="tags"><span class="tag clay">pH 4.5</span><span class="tag clay">Detangle, deep and leave-in</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of a multifunctional conditioning formulation designed for detangling, deep conditioning and leave-in application at pH of 4.5. The formulation combines cationic conditioning agents, emollients, humectants and hydrolysed proteins to deliver maximum slip during detangling, protein replenishment for deep conditioning, both without build-up during rinse off, and moisture retention for leave-in application.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Conditioning system:</b> BTMS-50, Polyquaternium-7 and cationic guar gum for conditioning, slip and improved detangling.</li><li><b>Emollient system:</b> Shea butter, sunflower oil, jojoba oil and coco-caprylate for lubrication, softness and reduced friction.</li><li><b>Hydration system:</b> Aloe vera juice, glycerin, sodium lactate and panthenol for humectant support.</li><li><b>Protein system:</b> Hydrolysed silk and wheat proteins for hair conditioning and film-forming properties.</li><li><b>Emulsion structure:</b> Stearic acid, Cetyl alcohol and Cetearyl alcohol/Ceteareth-20 for viscosity and structural development.</li></ul>
+          </div>
+        </article>
+</div>
+<div class="sys" id="sys-active-based-systems"><h3 class="sys-title">Active-based systems</h3>
+<article class="formula">
+          <button class="formula-img" data-lb="assets/img/proj-serum.jpg" data-cap="Depigmenting Face Serum (illustrative image)"><img src="assets/img/proj-serum.jpg" alt="Illustrative image of depigmenting face serum" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 7 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Depigmenting Face Serum</h4>
+            <div class="tags"><span class="tag clay">pH 5.0</span><span class="tag clay">Aqueous serum</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of a multi-active facial serum formulated to address uneven skin tone and the appearance of hyperpigmentation at pH of 5.0. The aqueous formulation combines complementary brightening ingredients, humectants and skin-conditioning agents to support hydration and improve the appearance of uneven skin tone and hyperpigmentation.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Brightening actives:</b> Niacinamide (4%), alpha-arbutin (3%), N-acetyl glucosamine (2%) and licorice root extract for complementary skin brightening mechanisms.</li><li><b>Hydration system:</b> Glycerin, sodium hyaluronate, betaine and panthenol for humectant support and skin conditioning.</li><li><b>Skin soothing:</b> Allantoin for soothing and conditioning properties.</li><li><b>Formulation support:</b> Disodium EDTA as chelating agent and Liquid Germall Plus as preservative.</li></ul>
+          </div>
+        </article>
+<article class="formula flip">
+          <button class="formula-img" data-lb="assets/img/proj-lip.jpg" data-cap="Exfoliating Lip Treatment (illustrative image)"><img src="assets/img/proj-lip.jpg" alt="Illustrative image of exfoliating lip treatment" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 8 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Exfoliating Lip Treatment</h4>
+            <div class="tags"><span class="tag clay">pH 4</span><span class="tag clay">AHA + PHA</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Development of a water-based exfoliating lip treatment combining alpha-hydroxy acid and polyhydroxy acid technologies to support gentle surface exfoliation at a pH of 4. The formulation incorporates humectants, film-forming polymers and skin-conditioning ingredients to balance exfoliating functionality with moisture retention.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Exfoliating system:</b> Lactic acid (2%) and gluconolactone (5%) for complementary exfoliating and humectant properties.</li><li><b>Humectant:</b> Glycerin for moisture retention.</li><li><b>Rheology system:</b> Hydroxyethylcellulose (HEC) and xanthan gum for viscosity development and gel structure.</li><li><b>Conditioning system:</b> Allantoin and hydrolysed silk for skin conditioning.</li><li><b>Preservation:</b> Euxyl PE 9010 for broad-spectrum preservation.</li></ul>
+          </div>
+        </article>
+<article class="formula">
+          <button class="formula-img" data-lb="assets/img/proj-prepoo.jpg" data-cap="Pre-poo Scalp Treatment (illustrative image)"><img src="assets/img/proj-prepoo.jpg" alt="Illustrative image of pre-poo scalp treatment" loading="lazy"></button>
+          <div class="formula-body">
+            <p class="where">Project 9 · Developed at Afri Botanica R&amp;D</p>
+            <h4>Pre-poo Scalp Treatment</h4>
+            <div class="tags"><span class="tag clay">pH 5</span><span class="tag clay">Water-based</span></div>
+            <p class="lbl">Project overview</p>
+            <p>Developed a water-based pre-poo scalp treatment combining exfoliating acids, sebum management ingredients and conditioning polymers at a pH of 5. The formulation is designed to support scalp cleansing preparation and improve the condition and manageability of hair before shampooing.</p>
+            <p class="lbl">Rationale</p>
+            <ul><li><b>Exfoliating system:</b> Salicylic Acid Matrix and Shikimic acid for an acid-based scalp treatment concept.</li><li><b>Treatment ingredients:</b> Zinc PCA and niacinamide for sebum management, Witch Hazel extract and Allantoin for soothing.</li><li><b>Conditioning and hydration:</b> Cationic guar gum and glycerin to support conditioning, slip and moisture retention.</li><li><b>Formulation support:</b> Allantoin, Disodium EDTA and Liquid Germall Plus.</li></ul>
+          </div>
+        </article>
+</div>
 
       <h3 class="sub">At the bench</h3>
-      <p class="muted">Trial batches, texture checks and stability work at Inveo Laboratories. Tap to view.</p>
+      <p class="muted">Trial batches, texture checks and stability work at Afri Botanica, plus quality analysis at PZ Cussons. Tap to view.</p>
       <div class="media-grid" id="benchGrid"></div>
 
       <h3 class="sub">Technical skills</h3>
@@ -466,7 +599,7 @@ figure{margin:0}
               <li>Maintain technical documentation of batch results, quality assessments, final formulation sheets and ingredient research.</li>
             </ul>
           </div>
-          <button class="pic" data-lb="assets/img/solevo-banner.jpg" data-cap="Representing Afri Botanica at Solevo Technical & Innovation Day, Lagos, 2026"><img src="assets/img/solevo-banner.jpg" alt="Precious in an Afri Botanica shirt at Solevo Technical and Innovation Day" loading="lazy"></button>
+          <button class="pic" data-lb="assets/img/lab-bench.jpg" data-cap="At the bench, Afri Botanica, Lagos"><img src="assets/img/lab-bench.jpg" alt="Precious working at the lab bench at Afri Botanica" loading="lazy"></button>
         </div>
 
         <div class="role past">
@@ -511,15 +644,30 @@ figure{margin:0}
 
         <div class="role past">
           <div>
-            <p class="meta">May 2023 – Aug 2023</p>
-            <h3>Quality Control / Assurance Intern, then Production Engineering Intern</h3>
+            <p class="meta">Jul 2023 – Aug 2023</p>
+            <h3>Production Engineering Intern</h3>
             <p class="org">PZ Cussons Nigeria, Ikorodu, Lagos</p>
             <ul>
-              <li>Tested 30+ raw materials and finished products for pH, viscosity, conductivity, specific gravity, hardness, colour and sensory compliance.</li>
-              <li>Supported safety evaluation across baby care, lotions, creams, hair relaxers, antiseptics and household products.</li>
-              <li>Operated and monitored high-output production equipment, enforced HSE standards and tracked line output.</li>
+              <li>Operated and monitored industrial production equipment under high-output manufacturing conditions.</li>
+              <li>Enforced operational safety standards and coordinated with HSE teams to maintain efficient, hazard-free workflows.</li>
+              <li>Tracked production metrics and supervised line operations to support daily output targets.</li>
             </ul>
           </div>
+          <button class="pic" data-lb="assets/img/pz-powder.jpg" data-cap="Production quality checks in the powder section, PZ Cussons Nigeria"><img src="assets/img/pz-powder.jpg" alt="Precious in PPE in the powder production section" loading="lazy" style="object-position:50% 40%"></button>
+        </div>
+
+        <div class="role past">
+          <div>
+            <p class="meta">May 2023 – Jun 2023</p>
+            <h3>Quality Control / Assurance Intern</h3>
+            <p class="org">PZ Cussons Nigeria, Ikorodu, Lagos</p>
+            <ul>
+              <li>Performed analytical quality testing on 30+ raw materials and finished product samples, assessing pH, viscosity, conductivity, specific gravity, hardness, color, and sensory compliance.</li>
+              <li>Worked with line inspection team to ensure machine and facility cleaning before production, and correct defects before clearance.</li>
+              <li>Supported in-process and finished-product safety evaluation across personal care and household product categories including baby wipes, body lotions, creams, oils, medicaments, hair relaxers, baby powder, antiseptics and dishwashing liquid.</li>
+            </ul>
+          </div>
+          <button class="pic" data-lb="assets/img/pz-qc.jpg" data-cap="Quality analysis in the QC lab, PZ Cussons Nigeria"><img src="assets/img/pz-qc.jpg" alt="Precious performing a titration in the QC lab" loading="lazy"></button>
         </div>
 
         <div class="role past">
@@ -559,10 +707,25 @@ figure{margin:0}
 
       <div class="event" data-year="2026">
         <div>
+          <h3>Cosmetics Connect</h3>
+          <p class="when">Lagos, October 2026</p>
+          <span class="tag role-tag">Afri Botanica representative</span>
+          <p>Attended the 2026 edition of Cosmetics Connect convened by Society of Cosmetic Scientists Nigeria as a representative of Afri Botanica. Featured by IFSCC, this edition brought professionals together to discuss Formulating Excellence for Global Impact.</p>
+        </div>
+        <div class="gallery">
+          <button data-lb="assets/img/cc-solo.jpg" data-cap="Cosmetics Connect 2026, Lagos"><img src="assets/img/cc-solo.jpg" alt="Precious at the Welcome to Cosmetics Connect banner" loading="lazy"></button>
+          <button data-lb="assets/img/cc-logo.jpg" data-cap="Cosmetics Connect 2026, Lagos"><img src="assets/img/cc-logo.jpg" alt="Precious with an attendee at the Cosmetics Connect board" loading="lazy"></button>
+          <button data-lb="assets/img/cc-nicos.jpg" data-cap="Cosmetics Connect 2026, Lagos"><img src="assets/img/cc-nicos.jpg" alt="Precious with an attendee at the NICOS banner" loading="lazy"></button>
+          <button data-lb="assets/img/anera-cc.jpg" data-cap="With the Anera team at Cosmetics Connect"><img src="assets/img/anera-cc.jpg" alt="Precious with the Anera team" loading="lazy"></button>
+        </div>
+      </div>
+
+      <div class="event" data-year="2026">
+        <div>
           <h3>Solevo Technical &amp; Innovation Day</h3>
           <p class="when">Lagos, October 2026</p>
           <span class="tag role-tag">Afri Botanica delegate</span>
-          <p>Live demonstrations and clinical study reports on new ingredient technologies from Evonik, Bluestar Silicones and 3V Sigma.</p>
+          <p>As one of the delegates from Afri Botanica, Solevo Technical &amp; Innovation Day proved a useful avenue to learn about innovative ingredient technologies from Evonik, Bluestar Silicones and 3V Sigma through live demonstrations and clinical study reports.</p>
         </div>
         <div class="gallery">
           <button data-lb="assets/img/solevo-banner.jpg" data-cap="Solevo Technical & Innovation Day, Lagos 2026"><img src="assets/img/solevo-banner.jpg" alt="Precious beside the Solevo Technical and Innovation Day banner" loading="lazy"></button>
@@ -572,20 +735,11 @@ figure{margin:0}
 
       <div class="event noimg" data-year="2026">
         <div>
-          <h3>Cosmetics Connect 2026</h3>
-          <p class="when">Lagos, October 2026</p>
-          <span class="tag role-tag">Afri Botanica representative</span>
-        </div>
-        <div class="gallery"><p>Convened by the Society of Cosmetic Scientists Nigeria and featured by IFSCC, this edition brought professionals together around formulating excellence for global impact.</p></div>
-      </div>
-
-      <div class="event noimg" data-year="2026">
-        <div>
           <h3>The Eco Well E-Summit</h3>
           <p class="when">Virtual, December 2024 – September 2026</p>
           <span class="tag role-tag">Four editions attended</span>
         </div>
-        <div class="gallery"><p>Sustainable formulation and packaging, clean beauty standards, claims substantiation and responsible ingredient sourcing.</p></div>
+        <div class="gallery"><p>Attended four editions of this virtual summit gaining insights into sustainable and eco-conscious formulation and packaging designs, clean beauty standards, claims substantiation, and environmentally responsible ingredient sourcing.</p></div>
       </div>
 
       <div class="event" data-year="2025">
@@ -593,10 +747,10 @@ figure{margin:0}
           <h3>Beauty West Africa, 8th edition</h3>
           <p class="when">Lagos, November 2025</p>
           <span class="tag role-tag">Personal Assistant to the Founder, Afri Botanica</span>
-          <p>Africa’s largest beauty and cosmetics exhibition, connecting global brands with the West African market. Supported Afri Botanica’s founder, a guest speaker.</p>
+          <p>Attended the 8th edition of Africa’s largest beauty and cosmetics exhibition, a premier trade event that connects global brands with the West African market, as a Personal Assistant to Founder, Afri Botanica, who was a guest speaker at the conference.</p>
         </div>
         <div class="gallery">
-          <button data-lb="assets/img/bwa-grace.jpg" data-cap="With Grace Oriaghan, Founder of Afri Botanica and guest speaker, Beauty West Africa 2025"><img src="assets/img/bwa-grace.jpg" alt="Precious with Grace Oriaghan at the sponsors wall" loading="lazy"></button>
+          <button data-lb="assets/img/bwa-grace.jpg" data-cap="With Grace Oriaghan, Founder and Chief Operations Officer of Afri Botanica and guest speaker, Beauty West Africa 2025"><img src="assets/img/bwa-grace.jpg" alt="Precious with Grace Oriaghan at the sponsors wall" loading="lazy"></button>
           <button data-lb="assets/img/bwa-stage.jpg" data-cap="Main stage, Beauty West Africa 2025"><img src="assets/img/bwa-stage.jpg" alt="Precious in front of the Beauty West Africa stage" loading="lazy"></button>
           <button data-lb="assets/img/bwa-floor.jpg" data-cap="Exhibition floor, Beauty West Africa 2025"><img src="assets/img/bwa-floor.jpg" alt="Precious on the exhibition floor" loading="lazy"></button>
         </div>
@@ -607,7 +761,7 @@ figure{margin:0}
           <h3>Beauty in the Motherland</h3>
           <p class="when">Lagos, October 2025</p>
           <span class="tag role-tag">Exhibition Support Chemist, Inveo Laboratories</span>
-          <p>Africa’s biggest indigenous beauty event. Ran live formulation demonstrations at the Inveo Laboratories booth, alongside Multichem (Solevo Group) and Evonik.</p>
+          <p>Participated as an Exhibition Support Chemist for Inveo labs at the biggest indigenous beauty event in Africa, recognized for celebrating and advancing Africa’s creative contribution to the beauty industry.</p>
         </div>
         <div class="gallery">
           <button data-lb="assets/img/bim-booth.jpg" data-cap="Inveo Laboratories booth, Beauty in the Motherland 2025"><img src="assets/img/bim-booth.jpg" alt="Precious at the Inveo Laboratories booth" loading="lazy" style="object-position:62% 50%"></button>
@@ -637,18 +791,27 @@ figure{margin:0}
           <div>
             <h3>SERVICOM &amp; Gender Equality Community Development Service</h3>
             <p class="meta">National Youth Service Corps, Jul 2025 – May 2026</p>
-            <ul><li>Community sensitisation on service delivery standards, citizen rights and gender equality.</li><li>Planned, documented and ran inclusivity campaigns in marginalised areas.</li></ul>
+            <ul><li>Community sensitisation on service delivery standards, citizen rights and gender equality.</li><li>Planned, documented and ran inclusivity campaigns in marginalised areas at Ikoyi-Obalende LCDA in Eti-Osa.</li></ul>
           </div>
         </div>
-        <div class="card lead">
+        <div class="card lead with-img">
+          <button data-lb="assets/img/anera-cc.jpg" data-cap="With the Anera team at Cosmetics Connect"><img src="assets/img/anera-cc.jpg" alt="Precious with the Anera team" loading="lazy"></button>
+          <div>
           <h3>Beauty Research Collaborator</h3>
           <p class="meta">Anera Research Hub, Mar – Jul 2026</p>
           <ul><li>Contributed weekly research articles on beauty in the African landscape.</li><li>Supported consumer trend surveys building a dataset for African consumers.</li></ul>
+          </div>
         </div>
-        <div class="card lead">
+        <div class="card lead with-img two-img">
+          <div class="pics">
+            <button data-lb="assets/img/fx-campus.jpg" data-cap="Campus publicity"><img src="assets/img/fx-campus.jpg" alt="Precious handing out FUTURE-X materials to students" loading="lazy"></button>
+            <button data-lb="assets/img/fx-content.jpg" data-cap="Publicity content creation"><img src="assets/img/fx-content.jpg" alt="Precious in a FUTURE-X ambassador shirt recording content" loading="lazy"></button>
+          </div>
+          <div>
           <h3>Publicity Team Member</h3>
           <p class="meta">UNICEF x Unilever FUTURE-X Campus Ambassador Program, FUTO, 2024</p>
           <ul><li>Publicity that drove 4,000+ student registrations for Unilever entrepreneurship courses.</li><li>Helped mobilise 3,545 attendees for an on-campus career seminar.</li></ul>
+          </div>
         </div>
         <div class="card lead">
           <h3>Programs and Outreach Lead</h3>
@@ -702,10 +865,19 @@ figure{margin:0}
       </ul>
 
       <h3 class="sub" style="margin-top:44px">Professional memberships</h3>
+      <div class="certmem">
+        <div class="card mem">
+          <div><b>NICOS</b><span class="post">MNICOS, Full Member</span><span>Society of Cosmetic Scientists Nigeria. Admitted 18 February 2026.</span></div>
+          <button data-lb="assets/img/cert-nicos.jpg" data-cap="NICOS membership certificate"><img src="assets/img/cert-nicos.jpg" alt="NICOS membership certificate" loading="lazy"></button>
+        </div>
+        <div class="card mem">
+          <div><b>ASM</b><span class="post">Global Outreach Contributing Member</span><span>American Society for Microbiology, 2026.</span></div>
+          <button data-lb="assets/img/cert-asm.jpg" data-cap="ASM 2026 certificate of membership"><img src="assets/img/cert-asm.jpg" alt="ASM membership certificate" loading="lazy"></button>
+        </div>
+      </div>
       <div class="aff">
         <div class="card"><b>IFSCC</b><span>International Federation of Societies of Cosmetic Chemists, since Mar 2026</span></div>
-        <div class="card"><b>NICOS</b><span>Society of Cosmetic Scientists Nigeria, since Jan 2026</span></div>
-        <div class="card"><b>ASM</b><span>American Society for Microbiology, since Jan 2026</span></div>
+        
         <div class="card"><b>NSChE</b><span>Nigerian Society of Chemical Engineers, since Sep 2020</span></div>
       </div>
 
@@ -720,12 +892,12 @@ figure{margin:0}
     <!-- ================= CONTACT ================= -->
     <section class="view" id="contact" data-title="Contact">
       <div class="view-head">
-        <div><h2>Contact</h2><p>Open to Master’s scholarship conversations, research collaborations and formulation work.</p></div>
+        <div><h2>Contact</h2></div>
       </div>
       <div class="contact">
         <div class="big">
           <h2>Let’s talk formulation science</h2>
-          <p>If you run a cosmetic science programme, a scholarship or a lab working on skin of colour, I would be glad to hear from you.</p>
+          <p>If you run a cosmetic science programme or a lab working on skin and haircare innovation, I would be glad to hear from you.</p>
           <a class="btn" href="mailto:nwosuprcs@gmail.com">nwosuprcs@gmail.com</a>
         </div>
         <div class="card">
@@ -735,7 +907,6 @@ figure{margin:0}
             <li><small>Phone</small><a href="tel:+2347015585657">+234 701 558 5657</a></li>
             <li><small>Based in</small>Lagos, Nigeria</li>
             <li><small>CV</small><a href="assets/docs/Nwosu_Precious_CV.pdf" download>Download the latest PDF</a></li>
-            <li><small>References</small>Available on request from Grace Oriaghan (<a href="https://www.afribotanica.com/" target="_blank" rel="noopener">Afri Botanica</a>) and Ekanem Mary Magdalene (<a href="https://www.inveoresearchlabs.com/" target="_blank" rel="noopener">Inveo Laboratories</a>)</li>
           </ul>
         </div>
       </div>
@@ -753,6 +924,7 @@ figure{margin:0}
 /* ---------- Bench videos and photos (edit captions here) ---------- */
 const bench = [
   {type:"video", src:"assets/video/lab-1.mp4", poster:"assets/video/lab-1.jpg", cap:"Checking cream texture"},
+  {type:"img",   src:"assets/img/pz-qc.jpg", cap:"Quality analysis in the QC lab, PZ Cussons"},
   {type:"img",   src:"assets/img/lab-surfactant.jpg", cap:"Surfactant blend for a shampoo trial"},
   {type:"video", src:"assets/video/lab-2.mp4", poster:"assets/video/lab-2.jpg", cap:"Mixing a surfactant system"},
   {type:"video", src:"assets/video/lab-4.mp4", poster:"assets/video/lab-4.jpg", cap:"Weighing at the bench"},
@@ -762,7 +934,7 @@ const bench = [
   {type:"video", src:"assets/video/lab-8.mp4", poster:"assets/video/lab-8.jpg", cap:"Labelled trial batch"},
   {type:"video", src:"assets/video/lab-5.mp4", poster:"assets/video/lab-5.jpg", cap:"Inspecting a finished sample"},
   {type:"video", src:"assets/video/lab-6.mp4", poster:"assets/video/lab-6.jpg", cap:"Dispensing test"},
-  {type:"img",   src:"assets/img/lab-bench.jpg", cap:"At work in the Inveo Laboratories lab"}
+  {type:"img",   src:"assets/img/lab-bench.jpg", cap:"At the bench, Afri Botanica"}
 ];
 const grid = document.getElementById("benchGrid");
 bench.forEach(m=>{
@@ -800,6 +972,8 @@ function show(){
   window.scrollTo(0,0);
 }
 addEventListener("hashchange",show); show();
+
+document.querySelectorAll("[data-jump]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();document.getElementById(a.dataset.jump).scrollIntoView({behavior:"smooth"});}));
 
 /* ---------- Event filter ---------- */
 document.querySelectorAll(".filters button").forEach(btn=>btn.addEventListener("click",()=>{
