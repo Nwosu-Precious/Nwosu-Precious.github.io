@@ -152,8 +152,13 @@ figure{margin:0}
 .sys-title{font-size:1.9rem;margin:48px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .formula{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;margin-bottom:22px}
 .formula.flip .formula-img{order:2}
-.formula-img{border:0;padding:0;background:var(--line);cursor:zoom-in;display:block}
-.formula-img img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.formula-img{position:relative;border:0;padding:0;background:#1F1612;cursor:pointer;display:block;overflow:hidden}
+.formula-img.portrait img{object-fit:contain}
+.formula-img .play{position:absolute;inset:0;display:grid;place-items:center}
+.formula-img .play i{width:62px;height:62px;border-radius:50%;background:rgba(255,250,244,.92);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.formula-img .play i::after{content:"";border-left:17px solid var(--clay);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
+.formula-img .fcap{position:absolute;left:0;right:0;bottom:0;padding:22px 16px 12px;font-size:.84rem;color:#fff;text-align:left;background:linear-gradient(transparent,rgba(20,10,7,.8))}
+.formula-img img{width:100%;height:100%;min-height:340px;max-height:620px;object-fit:cover}
 .formula-body{padding:clamp(22px,3.4vw,38px)}
 .formula .where{font-size:.8rem;color:var(--sage);font-weight:600;margin-bottom:8px}
 .formula h4{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.15;margin:0 0 12px}
@@ -289,7 +294,8 @@ figure{margin:0}
   .role{grid-template-columns:1fr}
   .formula{grid-template-columns:1fr}
   .formula.flip .formula-img{order:0}
-  .formula-img img{min-height:0;aspect-ratio:4/3}
+  .formula-img img{min-height:0;max-height:none;aspect-ratio:4/3}
+  .formula-img.portrait img{aspect-ratio:3/4;max-height:520px}
   .role .pic{max-width:300px}
   .aff{grid-template-columns:1fr 1fr}
   .certmem{grid-template-columns:1fr}
@@ -443,7 +449,7 @@ figure{margin:0}
     <!-- ================= LAB ================= -->
     <section class="view" id="lab" data-title="Formulation lab">
       <div class="view-head">
-        <div><h2>Formulation lab</h2><p>Nine formulations across four systems, with the overview and rationale behind each. Product images are illustrative.</p></div>
+        <div><h2>Formulation lab</h2><p>Nine formulations across four systems, with the overview and rationale behind each.</p></div>
       </div>
 
       <nav class="sysnav" aria-label="Formulation systems">
@@ -454,7 +460,7 @@ figure{margin:0}
 </nav>
 <div class="sys" id="sys-emulsion-and-structuring-systems"><h3 class="sys-title">Emulsion and structuring systems</h3>
 <article class="formula">
-          <button class="formula-img" data-lb="assets/img/proj-cream.jpg" data-cap="Hydrating Body Lotion (illustrative image)"><img src="assets/img/proj-cream.jpg" alt="Illustrative image of hydrating body lotion" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-lotion.mp4" data-video="1" data-cap="Making the body lotion"><img src="assets/video/proj-lotion.jpg" alt="Making the body lotion" loading="lazy"><span class="play"><i></i></span><span class="fcap">Making the body lotion</span></button>
           <div class="formula-body">
             <p class="where">Project 1 · Developed at Afri Botanica R&amp;D</p>
             <h4>Hydrating Body Lotion</h4>
@@ -466,7 +472,7 @@ figure{margin:0}
           </div>
         </article>
 <article class="formula flip">
-          <button class="formula-img" data-lb="assets/img/proj-scrub.jpg" data-cap="Emulsified Body Scrub (illustrative image)"><img src="assets/img/proj-scrub.jpg" alt="Illustrative image of emulsified body scrub" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-scrub.mp4" data-video="1" data-cap="Emulsified body scrub"><img src="assets/video/proj-scrub.jpg" alt="Emulsified body scrub" loading="lazy"><span class="play"><i></i></span><span class="fcap">Emulsified body scrub</span></button>
           <div class="formula-body">
             <p class="where">Project 2 · Developed at Afri Botanica R&amp;D</p>
             <h4>Emulsified Body Scrub</h4>
@@ -480,7 +486,7 @@ figure{margin:0}
 </div>
 <div class="sys" id="sys-surfactant-systems"><h3 class="sys-title">Surfactant systems</h3>
 <article class="formula">
-          <button class="formula-img" data-lb="assets/img/proj-clarify.jpg" data-cap="Clarifying Shampoo (illustrative image)"><img src="assets/img/proj-clarify.jpg" alt="Illustrative image of clarifying shampoo" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-clarify.mp4" data-video="1" data-cap="Salon-Grade Clarifying Shampoo"><img src="assets/video/proj-clarify.jpg" alt="Salon-Grade Clarifying Shampoo" loading="lazy"><span class="play"><i></i></span><span class="fcap">Salon-Grade Clarifying Shampoo</span></button>
           <div class="formula-body">
             <p class="where">Project 3 · Developed at Afri Botanica R&amp;D</p>
             <h4>Clarifying Shampoo</h4>
@@ -492,7 +498,7 @@ figure{margin:0}
           </div>
         </article>
 <article class="formula flip">
-          <button class="formula-img" data-lb="assets/img/proj-cleanser.jpg" data-cap="Foaming Face Cleanser (illustrative image)"><img src="assets/img/proj-cleanser.jpg" alt="Illustrative image of foaming face cleanser" loading="lazy"></button>
+          <button class="formula-img" data-lb="assets/video/proj-cleanser.mp4" data-video="1" data-cap="Dispensing the gentle foamy face cleanser"><img src="assets/video/proj-cleanser.jpg" alt="Dispensing the gentle foamy face cleanser" loading="lazy"><span class="play"><i></i></span><span class="fcap">Dispensing the gentle foamy face cleanser</span></button>
           <div class="formula-body">
             <p class="where">Project 4 · Developed at Afri Botanica R&amp;D</p>
             <h4>Foaming Face Cleanser</h4>
@@ -504,7 +510,7 @@ figure{margin:0}
           </div>
         </article>
 <article class="formula">
-          <button class="formula-img" data-lb="assets/img/proj-shampoo.jpg" data-cap="Anti-dandruff Shampoo (illustrative image)"><img src="assets/img/proj-shampoo.jpg" alt="Illustrative image of anti-dandruff shampoo" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-antidandruff.mp4" data-video="1" data-cap="Anti-dandruff Shampoo"><img src="assets/video/proj-antidandruff.jpg" alt="Anti-dandruff Shampoo" loading="lazy"><span class="play"><i></i></span><span class="fcap">Anti-dandruff Shampoo</span></button>
           <div class="formula-body">
             <p class="where">Project 5 · Developed at Afri Botanica R&amp;D</p>
             <h4>Anti-dandruff Shampoo</h4>
@@ -518,7 +524,7 @@ figure{margin:0}
 </div>
 <div class="sys" id="sys-cationic-conditioning-systems"><h3 class="sys-title">Cationic conditioning systems</h3>
 <article class="formula flip">
-          <button class="formula-img" data-lb="assets/img/proj-conditioner.jpg" data-cap="3-in-1 Hair Conditioner (illustrative image)"><img src="assets/img/proj-conditioner.jpg" alt="Illustrative image of 3-in-1 hair conditioner" loading="lazy"></button>
+          <button class="formula-img" data-lb="assets/video/proj-conditioner.mp4" data-video="1" data-cap="3-in-1 hair conditioner pilot batch"><img src="assets/video/proj-conditioner.jpg" alt="3-in-1 hair conditioner pilot batch" loading="lazy"><span class="play"><i></i></span><span class="fcap">3-in-1 hair conditioner pilot batch</span></button>
           <div class="formula-body">
             <p class="where">Project 6 · Developed at Afri Botanica R&amp;D</p>
             <h4>3-in-1 Hair Conditioner</h4>
@@ -532,7 +538,7 @@ figure{margin:0}
 </div>
 <div class="sys" id="sys-active-based-systems"><h3 class="sys-title">Active-based systems</h3>
 <article class="formula">
-          <button class="formula-img" data-lb="assets/img/proj-serum.jpg" data-cap="Depigmenting Face Serum (illustrative image)"><img src="assets/img/proj-serum.jpg" alt="Illustrative image of depigmenting face serum" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-serum.mp4" data-video="1" data-cap="Depigmenting Face Serum"><img src="assets/video/proj-serum.jpg" alt="Depigmenting Face Serum" loading="lazy"><span class="play"><i></i></span><span class="fcap">Depigmenting Face Serum</span></button>
           <div class="formula-body">
             <p class="where">Project 7 · Developed at Afri Botanica R&amp;D</p>
             <h4>Depigmenting Face Serum</h4>
@@ -544,7 +550,7 @@ figure{margin:0}
           </div>
         </article>
 <article class="formula flip">
-          <button class="formula-img" data-lb="assets/img/proj-lip.jpg" data-cap="Exfoliating Lip Treatment (illustrative image)"><img src="assets/img/proj-lip.jpg" alt="Illustrative image of exfoliating lip treatment" loading="lazy"></button>
+          <button class="formula-img" data-lb="assets/img/proj-lip-gloss.jpg" data-cap="Lush pink lip gloss"><img src="assets/img/proj-lip-gloss.jpg" alt="Lush pink lip gloss" loading="lazy"><span class="fcap">Lush pink lip gloss</span></button>
           <div class="formula-body">
             <p class="where">Project 8 · Developed at Afri Botanica R&amp;D</p>
             <h4>Exfoliating Lip Treatment</h4>
@@ -556,7 +562,7 @@ figure{margin:0}
           </div>
         </article>
 <article class="formula">
-          <button class="formula-img" data-lb="assets/img/proj-prepoo.jpg" data-cap="Pre-poo Scalp Treatment (illustrative image)"><img src="assets/img/proj-prepoo.jpg" alt="Illustrative image of pre-poo scalp treatment" loading="lazy"></button>
+          <button class="formula-img portrait" data-lb="assets/video/proj-prepoo.mp4" data-video="1" data-cap="Pre-poo Scalp Treatment Lab Sample"><img src="assets/video/proj-prepoo.jpg" alt="Pre-poo Scalp Treatment Lab Sample" loading="lazy"><span class="play"><i></i></span><span class="fcap">Pre-poo Scalp Treatment Lab Sample</span></button>
           <div class="formula-body">
             <p class="where">Project 9 · Developed at Afri Botanica R&amp;D</p>
             <h4>Pre-poo Scalp Treatment</h4>
@@ -570,7 +576,7 @@ figure{margin:0}
 </div>
 
       <h3 class="sub">At the bench</h3>
-      <p class="muted">Trial batches, texture checks and stability work at Afri Botanica, plus quality analysis at PZ Cussons. Tap to view.</p>
+      <p class="muted">Trial batches, texture checks and stability work at Afri Botanica. Tap to play.</p>
       <div class="media-grid" id="benchGrid"></div>
 
       <h3 class="sub">Technical skills</h3>
@@ -924,17 +930,13 @@ figure{margin:0}
 /* ---------- Bench videos and photos (edit captions here) ---------- */
 const bench = [
   {type:"video", src:"assets/video/lab-1.mp4", poster:"assets/video/lab-1.jpg", cap:"Checking cream texture"},
-  {type:"img",   src:"assets/img/pz-qc.jpg", cap:"Quality analysis in the QC lab, PZ Cussons"},
-  {type:"img",   src:"assets/img/lab-surfactant.jpg", cap:"Surfactant blend for a shampoo trial"},
   {type:"video", src:"assets/video/lab-2.mp4", poster:"assets/video/lab-2.jpg", cap:"Mixing a surfactant system"},
   {type:"video", src:"assets/video/lab-4.mp4", poster:"assets/video/lab-4.jpg", cap:"Weighing at the bench"},
-  {type:"img",   src:"assets/img/lab-samples.jpg", cap:"Trial samples held for stability observation"},
   {type:"video", src:"assets/video/lab-3.mp4", poster:"assets/video/lab-3.jpg", cap:"Filling a sample bottle"},
   {type:"video", src:"assets/video/lab-7.mp4", poster:"assets/video/lab-7.jpg", cap:"Clarity check on a solution"},
   {type:"video", src:"assets/video/lab-8.mp4", poster:"assets/video/lab-8.jpg", cap:"Labelled trial batch"},
   {type:"video", src:"assets/video/lab-5.mp4", poster:"assets/video/lab-5.jpg", cap:"Inspecting a finished sample"},
   {type:"video", src:"assets/video/lab-6.mp4", poster:"assets/video/lab-6.jpg", cap:"Dispensing test"},
-  {type:"img",   src:"assets/img/lab-bench.jpg", cap:"At the bench, Afri Botanica"}
 ];
 const grid = document.getElementById("benchGrid");
 bench.forEach(m=>{
