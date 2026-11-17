@@ -379,7 +379,7 @@ figure{margin:0}
 
       <div class="tiles">
         <a class="tile" href="#research"><img src="assets/img/pih-illustration.jpg" alt=""><div><b>Research</b><small>PIH in skin of colour, kinetic modelling</small></div></a>
-        <a class="tile" href="#lab"><img src="assets/img/lab-bench.jpg" alt="" style="object-position:50% 35%"><div><b>Formulation lab</b><small>Nine formulation projects and bench work</small></div></a>
+        <a class="tile" href="#lab"><img src="assets/img/lab-bench.jpg" alt="" style="object-position:50% 35%"><div><b>Formulation lab</b><small>Nine formulation projects</small></div></a>
         <a class="tile" href="#events"><img src="assets/img/bim-booth.jpg" alt=""><div><b>Industry events</b><small>Exhibitions and technical days</small></div></a>
       </div>
     </section>
@@ -575,9 +575,7 @@ figure{margin:0}
         </article>
 </div>
 
-      <h3 class="sub">At the bench</h3>
-      <p class="muted">Trial batches, texture checks and stability work at Afri Botanica. Tap to play.</p>
-      <div class="media-grid" id="benchGrid"></div>
+      
 
       <h3 class="sub">Technical skills</h3>
       <div class="skills">
@@ -927,26 +925,6 @@ figure{margin:0}
 </div>
 
 <script>
-/* ---------- Bench videos and photos (edit captions here) ---------- */
-const bench = [
-  {type:"video", src:"assets/video/lab-1.mp4", poster:"assets/video/lab-1.jpg", cap:"Checking cream texture"},
-  {type:"video", src:"assets/video/lab-2.mp4", poster:"assets/video/lab-2.jpg", cap:"Mixing a surfactant system"},
-  {type:"video", src:"assets/video/lab-4.mp4", poster:"assets/video/lab-4.jpg", cap:"Weighing at the bench"},
-  {type:"video", src:"assets/video/lab-3.mp4", poster:"assets/video/lab-3.jpg", cap:"Filling a sample bottle"},
-  {type:"video", src:"assets/video/lab-7.mp4", poster:"assets/video/lab-7.jpg", cap:"Clarity check on a solution"},
-  {type:"video", src:"assets/video/lab-8.mp4", poster:"assets/video/lab-8.jpg", cap:"Labelled trial batch"},
-  {type:"video", src:"assets/video/lab-5.mp4", poster:"assets/video/lab-5.jpg", cap:"Inspecting a finished sample"},
-  {type:"video", src:"assets/video/lab-6.mp4", poster:"assets/video/lab-6.jpg", cap:"Dispensing test"},
-];
-const grid = document.getElementById("benchGrid");
-bench.forEach(m=>{
-  const b=document.createElement("button");
-  b.className="media";
-  b.dataset.lb=m.src; b.dataset.cap=m.cap; if(m.type==="video") b.dataset.video="1";
-  b.innerHTML=`<img src="${m.type==="video"?m.poster:m.src}" alt="${m.cap}" loading="lazy">${m.type==="video"?'<span class="play"><i></i></span>':''}<span>${m.cap}</span>`;
-  grid.appendChild(b);
-});
-
 /* ---------- Routing between sections ---------- */
 const views=[...document.querySelectorAll(".view")];
 document.querySelectorAll("[data-nav]").forEach(nav=>{
